@@ -1,8 +1,29 @@
 {
-  "version": 2,
-  "functions": {
-    "api/parse.js": {
-      "includeFiles": "catalog.csv"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "kirana_ordering_assistant": {
+      "root": "kirana_ordering_assistant",
+      "framework": "fastapi",
+      "runtime": "python",
+      "entrypoint": "api:app"
+    },
+    "kirana_web_app": {
+      "root": "kirana_web_app",
+      "entrypoint": "server.js"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/py-api/(.*)",
+      "destination": {
+        "service": "kirana_ordering_assistant"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "kirana_web_app"
+      }
+    }
+  ]
 }
