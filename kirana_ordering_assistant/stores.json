@@ -1,0 +1,6584 @@
+[
+  {
+    "store_id": "K001",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Gupta",
+    "phone": "9839958838",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU009",
+      "SKU010",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU009": 5,
+      "SKU010": 5,
+      "SKU005": 5
+    }
+  },
+  {
+    "store_id": "K002",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Yadav",
+    "phone": "9813561597",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU007",
+      "SKU004",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU007": 10,
+      "SKU004": 5,
+      "SKU008": 7
+    }
+  },
+  {
+    "store_id": "K003",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Shah",
+    "phone": "9838898923",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU010",
+      "SKU007",
+      "SKU001",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU010": 21,
+      "SKU007": 10,
+      "SKU001": 5,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K004",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Sharma",
+    "phone": "9884093639",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU006",
+      "SKU004",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU006": 7,
+      "SKU004": 10,
+      "SKU009": 5,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K005",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9895320121",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU009",
+      "SKU002",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU003": 10,
+      "SKU006": 5,
+      "SKU009": 21,
+      "SKU002": 7,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K006",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Patel",
+    "phone": "9846231783",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU004",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU001": 10,
+      "SKU004": 14,
+      "SKU007": 10
+    }
+  },
+  {
+    "store_id": "K007",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Yadav",
+    "phone": "9852235350",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU007",
+      "SKU010",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU007": 7,
+      "SKU010": 7,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K008",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Jain",
+    "phone": "9888320463",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU004",
+      "SKU003",
+      "SKU005",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU004": 5,
+      "SKU003": 7,
+      "SKU005": 7,
+      "SKU009": 14,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K009",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9872820592",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU001",
+      "SKU002",
+      "SKU006",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU009": 10,
+      "SKU001": 10,
+      "SKU002": 5,
+      "SKU006": 10,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K010",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9845351479",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU002",
+      "SKU005",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU002": 21,
+      "SKU005": 7,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K011",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Patel",
+    "phone": "9810076758",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU002",
+      "SKU003",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU001": 5,
+      "SKU002": 7,
+      "SKU003": 21,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K012",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Verma",
+    "phone": "9826879290",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU003",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU009": 21,
+      "SKU003": 14,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K013",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9897225156",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU010",
+      "SKU001",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU009": 5,
+      "SKU010": 10,
+      "SKU001": 5,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K014",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9810965138",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU004",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU004": 10,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K015",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9875151231",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU003",
+      "SKU008",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU003": 14,
+      "SKU008": 7,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K016",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Thakur",
+    "phone": "9866851760",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU002",
+      "SKU009",
+      "SKU004",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU001": 7,
+      "SKU002": 7,
+      "SKU009": 7,
+      "SKU004": 21,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K017",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Choudhary",
+    "phone": "9872092888",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU008",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU008": 5,
+      "SKU010": 5,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K018",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Choudhary",
+    "phone": "9838688676",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU003",
+      "SKU007",
+      "SKU010",
+      "SKU004",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU001": 14,
+      "SKU003": 10,
+      "SKU007": 14,
+      "SKU010": 21,
+      "SKU004": 14,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K019",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Jain",
+    "phone": "9887736262",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU006": 21,
+      "SKU001": 14,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K020",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Patel",
+    "phone": "9820752378",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU010",
+      "SKU004",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU002": 5,
+      "SKU010": 21,
+      "SKU004": 7,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K021",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Gupta",
+    "phone": "9866267415",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU004",
+      "SKU006",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU005": 14,
+      "SKU004": 7,
+      "SKU006": 10,
+      "SKU002": 14,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K022",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Gupta",
+    "phone": "9885563727",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU009": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K023",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Sharma",
+    "phone": "9848250360",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU009": 5,
+      "SKU005": 21,
+      "SKU010": 10
+    }
+  },
+  {
+    "store_id": "K024",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Patel",
+    "phone": "9824366125",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU010",
+      "SKU004",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU005": 10,
+      "SKU010": 7,
+      "SKU004": 10,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K025",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Jain",
+    "phone": "9895132217",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU001",
+      "SKU009",
+      "SKU003",
+      "SKU002",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU001": 14,
+      "SKU009": 21,
+      "SKU003": 14,
+      "SKU002": 21,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K026",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Sharma",
+    "phone": "9814835614",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU009",
+      "SKU003",
+      "SKU004",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU009": 10,
+      "SKU003": 10,
+      "SKU004": 5,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K027",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Thakur",
+    "phone": "9823796726",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU007",
+      "SKU003",
+      "SKU002",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU007": 14,
+      "SKU003": 5,
+      "SKU002": 7,
+      "SKU010": 10
+    }
+  },
+  {
+    "store_id": "K028",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Thakur",
+    "phone": "9831367172",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU001",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU001": 7,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K029",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Jain",
+    "phone": "9813176186",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU006",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU006": 10,
+      "SKU005": 10,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K030",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Thakur",
+    "phone": "9813704481",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU003",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU003": 5,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K031",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Shah",
+    "phone": "9891363974",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU004",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU004": 14,
+      "SKU005": 5
+    }
+  },
+  {
+    "store_id": "K032",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Pandey",
+    "phone": "9867887757",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU010",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU010": 21,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K033",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Shah",
+    "phone": "9849682169",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU007",
+      "SKU009",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU004": 7,
+      "SKU007": 21,
+      "SKU009": 21,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K034",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Pandey",
+    "phone": "9848508907",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU006",
+      "SKU008",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU007": 14,
+      "SKU006": 7,
+      "SKU008": 21,
+      "SKU004": 14
+    }
+  },
+  {
+    "store_id": "K035",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Thakur",
+    "phone": "9879182797",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU005",
+      "SKU010",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU002": 7,
+      "SKU004": 5,
+      "SKU005": 5,
+      "SKU010": 7,
+      "SKU007": 14
+    }
+  },
+  {
+    "store_id": "K036",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Sharma",
+    "phone": "9894525678",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU008",
+      "SKU010",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU008": 5,
+      "SKU010": 5,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K037",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Patel",
+    "phone": "9816740197",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU008",
+      "SKU003",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU008": 21,
+      "SKU003": 21,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K038",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Verma",
+    "phone": "9877750178",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU008",
+      "SKU003",
+      "SKU006",
+      "SKU004",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU009": 10,
+      "SKU008": 7,
+      "SKU003": 10,
+      "SKU006": 21,
+      "SKU004": 14,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K039",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Verma",
+    "phone": "9848349783",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU006",
+      "SKU009",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU006": 7,
+      "SKU009": 7,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K040",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Patel",
+    "phone": "9865682626",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU009",
+      "SKU008",
+      "SKU004",
+      "SKU001",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU009": 14,
+      "SKU008": 21,
+      "SKU004": 5,
+      "SKU001": 21,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K041",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9862343121",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU010",
+      "SKU004",
+      "SKU008",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU010": 14,
+      "SKU004": 5,
+      "SKU008": 14,
+      "SKU002": 10,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K042",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9881688860",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU004",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU003": 10,
+      "SKU004": 7,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K043",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9898986321",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU007",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU007": 7,
+      "SKU003": 5
+    }
+  },
+  {
+    "store_id": "K044",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Choudhary",
+    "phone": "9871028710",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU007",
+      "SKU005",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU007": 5,
+      "SKU005": 14,
+      "SKU009": 5,
+      "SKU004": 21
+    }
+  },
+  {
+    "store_id": "K045",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Shah",
+    "phone": "9819209801",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU004",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU004": 21,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K046",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Patel",
+    "phone": "9825353091",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU005",
+      "SKU006",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU005": 21,
+      "SKU006": 5,
+      "SKU002": 7
+    }
+  },
+  {
+    "store_id": "K047",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Sharma",
+    "phone": "9851870192",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU004",
+      "SKU002",
+      "SKU005",
+      "SKU006",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU004": 10,
+      "SKU002": 21,
+      "SKU005": 5,
+      "SKU006": 21,
+      "SKU008": 5
+    }
+  },
+  {
+    "store_id": "K048",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Pandey",
+    "phone": "9859737181",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU006": 14,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K049",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Shah",
+    "phone": "9830534124",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU009",
+      "SKU005",
+      "SKU008",
+      "SKU007",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU009": 14,
+      "SKU005": 21,
+      "SKU008": 10,
+      "SKU007": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K050",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Jain",
+    "phone": "9872372114",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU008",
+      "SKU007",
+      "SKU003",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU001": 7,
+      "SKU008": 10,
+      "SKU007": 10,
+      "SKU003": 10,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K051",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Jain",
+    "phone": "9879340535",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU007",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU004": 7,
+      "SKU007": 14,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K052",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9839742165",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU006",
+      "SKU010",
+      "SKU009",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU005": 14,
+      "SKU006": 21,
+      "SKU010": 10,
+      "SKU009": 10,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K053",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Jain",
+    "phone": "9826194158",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU002",
+      "SKU003",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU006": 7,
+      "SKU002": 14,
+      "SKU003": 10,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K054",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Mishra",
+    "phone": "9836054020",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU006",
+      "SKU003",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU004": 21,
+      "SKU006": 7,
+      "SKU003": 10,
+      "SKU008": 5,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K055",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Jain",
+    "phone": "9875884623",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU005",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU001": 14,
+      "SKU005": 14,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K056",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Gupta",
+    "phone": "9825312516",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU008",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU008": 5,
+      "SKU002": 7
+    }
+  },
+  {
+    "store_id": "K057",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Mishra",
+    "phone": "9843311626",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU007",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU007": 14,
+      "SKU004": 14
+    }
+  },
+  {
+    "store_id": "K058",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Jain",
+    "phone": "9850987442",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU002": 10,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K059",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Yadav",
+    "phone": "9820075036",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU007",
+      "SKU008",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU007": 14,
+      "SKU008": 10,
+      "SKU006": 5
+    }
+  },
+  {
+    "store_id": "K060",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Jain",
+    "phone": "9870939053",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU005": 5,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K061",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Thakur",
+    "phone": "9829090631",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU003": 21,
+      "SKU005": 10
+    }
+  },
+  {
+    "store_id": "K062",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9850814428",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU009",
+      "SKU008",
+      "SKU004",
+      "SKU001",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU009": 14,
+      "SKU008": 10,
+      "SKU004": 21,
+      "SKU001": 10,
+      "SKU010": 5
+    }
+  },
+  {
+    "store_id": "K063",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Yadav",
+    "phone": "9812784407",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU001",
+      "SKU003",
+      "SKU004",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU001": 10,
+      "SKU003": 7,
+      "SKU004": 21,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K064",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9864807553",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU002",
+      "SKU003",
+      "SKU008",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU002": 10,
+      "SKU003": 14,
+      "SKU008": 21,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K065",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9853389073",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU009": 14,
+      "SKU001": 14
+    }
+  },
+  {
+    "store_id": "K066",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Yadav",
+    "phone": "9893568503",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU004",
+      "SKU003",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU001": 14,
+      "SKU004": 14,
+      "SKU003": 5,
+      "SKU005": 5,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K067",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Patel",
+    "phone": "9811835355",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU010",
+      "SKU009",
+      "SKU001",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU004": 10,
+      "SKU010": 21,
+      "SKU009": 10,
+      "SKU001": 14,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K068",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Yadav",
+    "phone": "9829413516",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU009",
+      "SKU003",
+      "SKU007",
+      "SKU001",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU009": 10,
+      "SKU003": 21,
+      "SKU007": 10,
+      "SKU001": 5,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K069",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Mishra",
+    "phone": "9875718414",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU010",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU009": 21,
+      "SKU010": 21,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K070",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Shah",
+    "phone": "9842051937",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU007",
+      "SKU001",
+      "SKU003",
+      "SKU006",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU007": 14,
+      "SKU001": 7,
+      "SKU003": 14,
+      "SKU006": 5,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K071",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Mishra",
+    "phone": "9869096899",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU008": 14,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K072",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Verma",
+    "phone": "9893652460",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU007",
+      "SKU003",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU006": 5,
+      "SKU007": 21,
+      "SKU003": 5,
+      "SKU009": 7,
+      "SKU004": 10
+    }
+  },
+  {
+    "store_id": "K073",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Sharma",
+    "phone": "9895060193",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU003": 5,
+      "SKU005": 10
+    }
+  },
+  {
+    "store_id": "K074",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Jain",
+    "phone": "9867805802",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU009",
+      "SKU007",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU004": 7,
+      "SKU009": 7,
+      "SKU007": 7,
+      "SKU005": 5
+    }
+  },
+  {
+    "store_id": "K075",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Choudhary",
+    "phone": "9842323627",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU003",
+      "SKU004",
+      "SKU008",
+      "SKU006",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU003": 10,
+      "SKU004": 5,
+      "SKU008": 14,
+      "SKU006": 10,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K076",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Sharma",
+    "phone": "9888862539",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU005",
+      "SKU008",
+      "SKU010",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU005": 14,
+      "SKU008": 14,
+      "SKU010": 5,
+      "SKU003": 7
+    }
+  },
+  {
+    "store_id": "K077",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Mishra",
+    "phone": "9849711319",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU007",
+      "SKU005",
+      "SKU010",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU007": 21,
+      "SKU005": 14,
+      "SKU010": 10,
+      "SKU008": 7
+    }
+  },
+  {
+    "store_id": "K078",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Shah",
+    "phone": "9835519083",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU001",
+      "SKU010",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU002": 21,
+      "SKU001": 10,
+      "SKU010": 7,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K079",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Shah",
+    "phone": "9836950221",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU005",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU006": 10,
+      "SKU005": 14,
+      "SKU007": 10
+    }
+  },
+  {
+    "store_id": "K080",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Sharma",
+    "phone": "9828892086",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU006",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 14,
+      "SKU009": 5,
+      "SKU006": 10,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K081",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Verma",
+    "phone": "9845186708",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU002",
+      "SKU004",
+      "SKU008",
+      "SKU001",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU006": 21,
+      "SKU002": 10,
+      "SKU004": 21,
+      "SKU008": 7,
+      "SKU001": 5,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K082",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Thakur",
+    "phone": "9828760553",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU005",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU005": 5,
+      "SKU008": 7
+    }
+  },
+  {
+    "store_id": "K083",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Patel",
+    "phone": "9859796322",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU003",
+      "SKU007",
+      "SKU006",
+      "SKU001",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU003": 14,
+      "SKU007": 10,
+      "SKU006": 5,
+      "SKU001": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K084",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Verma",
+    "phone": "9823335151",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU001",
+      "SKU004",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU006": 5,
+      "SKU001": 14,
+      "SKU004": 5,
+      "SKU003": 7
+    }
+  },
+  {
+    "store_id": "K085",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Gupta",
+    "phone": "9842691263",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU002",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU004": 7,
+      "SKU002": 21,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K086",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Shah",
+    "phone": "9810380581",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU010",
+      "SKU005",
+      "SKU007",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU010": 5,
+      "SKU005": 7,
+      "SKU007": 5,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K087",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Mishra",
+    "phone": "9833386929",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU003",
+      "SKU007",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU003": 14,
+      "SKU007": 14,
+      "SKU005": 10,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K088",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Sharma",
+    "phone": "9839735904",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU005",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 5,
+      "SKU005": 5,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K089",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Choudhary",
+    "phone": "9869533928",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU002": 5,
+      "SKU006": 7,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K090",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Thakur",
+    "phone": "9853645651",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU009",
+      "SKU005",
+      "SKU004",
+      "SKU008",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU009": 5,
+      "SKU005": 5,
+      "SKU004": 21,
+      "SKU008": 7,
+      "SKU006": 14
+    }
+  },
+  {
+    "store_id": "K091",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Yadav",
+    "phone": "9870867592",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU002",
+      "SKU006",
+      "SKU004",
+      "SKU003",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU007": 10,
+      "SKU002": 7,
+      "SKU006": 14,
+      "SKU004": 5,
+      "SKU003": 5,
+      "SKU008": 5
+    }
+  },
+  {
+    "store_id": "K092",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9860015814",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU001",
+      "SKU006",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 5,
+      "SKU001": 14,
+      "SKU006": 10,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K093",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Jain",
+    "phone": "9857197152",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU009": 14,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K094",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Shah",
+    "phone": "9825419645",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU007",
+      "SKU008",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU004": 21,
+      "SKU007": 21,
+      "SKU008": 5,
+      "SKU005": 21
+    }
+  },
+  {
+    "store_id": "K095",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Gupta",
+    "phone": "9851471222",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU003",
+      "SKU007",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 21,
+      "SKU001": 14,
+      "SKU003": 5,
+      "SKU007": 7,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K096",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9866348963",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU003",
+      "SKU010",
+      "SKU009",
+      "SKU008",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU006": 21,
+      "SKU003": 21,
+      "SKU010": 5,
+      "SKU009": 5,
+      "SKU008": 7,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K097",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Gupta",
+    "phone": "9869473616",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU010",
+      "SKU007",
+      "SKU003",
+      "SKU002",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU010": 10,
+      "SKU007": 14,
+      "SKU003": 5,
+      "SKU002": 10,
+      "SKU005": 21
+    }
+  },
+  {
+    "store_id": "K098",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Pandey",
+    "phone": "9839597483",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU001",
+      "SKU009",
+      "SKU002",
+      "SKU003",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU001": 10,
+      "SKU009": 10,
+      "SKU002": 10,
+      "SKU003": 5,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K099",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Choudhary",
+    "phone": "9861030579",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU010",
+      "SKU006",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU010": 5,
+      "SKU006": 14,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K100",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9867617561",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU005",
+      "SKU002",
+      "SKU004",
+      "SKU001",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU005": 21,
+      "SKU002": 14,
+      "SKU004": 10,
+      "SKU001": 5,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K101",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Yadav",
+    "phone": "9863747464",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU005",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU005": 10,
+      "SKU006": 7
+    }
+  },
+  {
+    "store_id": "K102",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9878444607",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU010",
+      "SKU003",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU010": 7,
+      "SKU003": 10,
+      "SKU002": 7
+    }
+  },
+  {
+    "store_id": "K103",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Mishra",
+    "phone": "9820113745",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU010",
+      "SKU009",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU010": 21,
+      "SKU009": 10,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K104",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9869352161",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU001",
+      "SKU006",
+      "SKU010",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 10,
+      "SKU001": 14,
+      "SKU006": 14,
+      "SKU010": 5,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K105",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Jain",
+    "phone": "9822119391",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU001",
+      "SKU004",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU009": 21,
+      "SKU001": 14,
+      "SKU004": 21,
+      "SKU005": 7,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K106",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9821318464",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU004",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU004": 21,
+      "SKU008": 21,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K107",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Shah",
+    "phone": "9864864099",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU001",
+      "SKU006",
+      "SKU009",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU001": 21,
+      "SKU006": 14,
+      "SKU009": 10,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K108",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Patel",
+    "phone": "9888213973",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU005",
+      "SKU007",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 21,
+      "SKU005": 5,
+      "SKU007": 10,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K109",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Thakur",
+    "phone": "9899941500",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU009": 10,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K110",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Yadav",
+    "phone": "9835770506",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU010",
+      "SKU002",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU010": 21,
+      "SKU002": 21,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K111",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Thakur",
+    "phone": "9827589104",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU010",
+      "SKU009",
+      "SKU007",
+      "SKU006",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU010": 14,
+      "SKU009": 5,
+      "SKU007": 14,
+      "SKU006": 10,
+      "SKU005": 7
+    }
+  },
+  {
+    "store_id": "K112",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Mishra",
+    "phone": "9870254091",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU004",
+      "SKU005",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU004": 7,
+      "SKU005": 10,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K113",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Verma",
+    "phone": "9877498993",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU004",
+      "SKU010",
+      "SKU007",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU004": 10,
+      "SKU010": 21,
+      "SKU007": 5,
+      "SKU008": 21,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K114",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Sharma",
+    "phone": "9870306604",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU002",
+      "SKU004",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU007": 14,
+      "SKU002": 10,
+      "SKU004": 5,
+      "SKU010": 14
+    }
+  },
+  {
+    "store_id": "K115",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9841645597",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU004",
+      "SKU001",
+      "SKU003",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU006": 7,
+      "SKU004": 7,
+      "SKU001": 5,
+      "SKU003": 10,
+      "SKU007": 14
+    }
+  },
+  {
+    "store_id": "K116",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9810704803",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU005",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU001": 7,
+      "SKU005": 21,
+      "SKU004": 21
+    }
+  },
+  {
+    "store_id": "K117",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Choudhary",
+    "phone": "9841895531",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU001",
+      "SKU004",
+      "SKU008",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU001": 14,
+      "SKU004": 5,
+      "SKU008": 5,
+      "SKU006": 14
+    }
+  },
+  {
+    "store_id": "K118",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Pandey",
+    "phone": "9879172559",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU005",
+      "SKU007",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 21,
+      "SKU005": 10,
+      "SKU007": 7,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K119",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Patel",
+    "phone": "9858399417",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU010": 14,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K120",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Shah",
+    "phone": "9812179995",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU004",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU002": 5,
+      "SKU006": 21,
+      "SKU004": 10,
+      "SKU009": 7,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K121",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Pandey",
+    "phone": "9833500064",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU003",
+      "SKU009",
+      "SKU001",
+      "SKU006",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU003": 10,
+      "SKU009": 7,
+      "SKU001": 5,
+      "SKU006": 7,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K122",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Jain",
+    "phone": "9882884346",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU001",
+      "SKU004",
+      "SKU003",
+      "SKU007",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 10,
+      "SKU001": 10,
+      "SKU004": 5,
+      "SKU003": 10,
+      "SKU007": 14,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K123",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Choudhary",
+    "phone": "9876599269",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU009",
+      "SKU005",
+      "SKU007",
+      "SKU001",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU009": 14,
+      "SKU005": 21,
+      "SKU007": 7,
+      "SKU001": 21,
+      "SKU004": 10
+    }
+  },
+  {
+    "store_id": "K124",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Sharma",
+    "phone": "9898707076",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU008",
+      "SKU007",
+      "SKU002",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU005": 14,
+      "SKU008": 10,
+      "SKU007": 14,
+      "SKU002": 5,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K125",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Choudhary",
+    "phone": "9817698469",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU006",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU006": 7,
+      "SKU003": 21
+    }
+  },
+  {
+    "store_id": "K126",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9841674763",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU007",
+      "SKU001",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU007": 10,
+      "SKU001": 10,
+      "SKU005": 14,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K127",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Patel",
+    "phone": "9863423225",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU004",
+      "SKU002",
+      "SKU001",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU004": 14,
+      "SKU002": 21,
+      "SKU001": 14,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K128",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Jain",
+    "phone": "9869897763",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU005",
+      "SKU008",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU005": 7,
+      "SKU008": 5,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K129",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9852894344",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU009",
+      "SKU005",
+      "SKU003",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU002": 7,
+      "SKU009": 10,
+      "SKU005": 21,
+      "SKU003": 7,
+      "SKU010": 5
+    }
+  },
+  {
+    "store_id": "K130",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Patel",
+    "phone": "9813527782",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU008",
+      "SKU007",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU006": 21,
+      "SKU008": 5,
+      "SKU007": 5,
+      "SKU005": 10
+    }
+  },
+  {
+    "store_id": "K131",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Verma",
+    "phone": "9864953237",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU006": 14,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K132",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Patel",
+    "phone": "9888891300",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU007",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU007": 21,
+      "SKU001": 7,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K133",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Patel",
+    "phone": "9840262109",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU005",
+      "SKU002",
+      "SKU003",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU005": 10,
+      "SKU002": 7,
+      "SKU003": 10,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K134",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Sharma",
+    "phone": "9832633927",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU001",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU006": 5,
+      "SKU001": 5,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K135",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Thakur",
+    "phone": "9865913331",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU009": 14,
+      "SKU005": 7
+    }
+  },
+  {
+    "store_id": "K136",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Jain",
+    "phone": "9818041391",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU007",
+      "SKU010",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU007": 10,
+      "SKU010": 21,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K137",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Shah",
+    "phone": "9827551135",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU010",
+      "SKU002",
+      "SKU003",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU010": 5,
+      "SKU002": 10,
+      "SKU003": 14,
+      "SKU008": 7
+    }
+  },
+  {
+    "store_id": "K138",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Sharma",
+    "phone": "9861559717",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU003",
+      "SKU006",
+      "SKU005",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU004": 7,
+      "SKU003": 7,
+      "SKU006": 14,
+      "SKU005": 21,
+      "SKU008": 14,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K139",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Verma",
+    "phone": "9862780072",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU010",
+      "SKU006",
+      "SKU001",
+      "SKU007",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU010": 21,
+      "SKU006": 14,
+      "SKU001": 10,
+      "SKU007": 21,
+      "SKU003": 5
+    }
+  },
+  {
+    "store_id": "K140",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9859093843",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU007",
+      "SKU009",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU006": 7,
+      "SKU001": 10,
+      "SKU007": 21,
+      "SKU009": 10,
+      "SKU005": 5,
+      "SKU010": 14
+    }
+  },
+  {
+    "store_id": "K141",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Verma",
+    "phone": "9893650068",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU003": 10,
+      "SKU002": 10,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K142",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Patel",
+    "phone": "9878333267",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU001",
+      "SKU010",
+      "SKU008",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU001": 21,
+      "SKU010": 14,
+      "SKU008": 7,
+      "SKU002": 21,
+      "SKU003": 21
+    }
+  },
+  {
+    "store_id": "K143",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Shah",
+    "phone": "9831810655",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU005",
+      "SKU006",
+      "SKU009",
+      "SKU007",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU005": 21,
+      "SKU006": 10,
+      "SKU009": 14,
+      "SKU007": 5,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K144",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Thakur",
+    "phone": "9888343175",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU008",
+      "SKU005",
+      "SKU006",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU008": 7,
+      "SKU005": 5,
+      "SKU006": 21,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K145",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Pandey",
+    "phone": "9829834119",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU002",
+      "SKU004",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU001": 14,
+      "SKU002": 10,
+      "SKU004": 14,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K146",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Yadav",
+    "phone": "9892071195",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU003",
+      "SKU004",
+      "SKU005",
+      "SKU009",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU003": 14,
+      "SKU004": 10,
+      "SKU005": 7,
+      "SKU009": 14,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K147",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Pandey",
+    "phone": "9896343485",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU008",
+      "SKU004",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU008": 10,
+      "SKU004": 7,
+      "SKU002": 10,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K148",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Verma",
+    "phone": "9856815569",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU007",
+      "SKU004",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU002": 10,
+      "SKU007": 5,
+      "SKU004": 10,
+      "SKU003": 5
+    }
+  },
+  {
+    "store_id": "K149",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Verma",
+    "phone": "9874300930",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU009",
+      "SKU005",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU009": 7,
+      "SKU005": 5,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K150",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Yadav",
+    "phone": "9899903592",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU001",
+      "SKU002",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU001": 14,
+      "SKU002": 5,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K151",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Pandey",
+    "phone": "9897629787",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU004",
+      "SKU005",
+      "SKU003",
+      "SKU007",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU004": 21,
+      "SKU005": 7,
+      "SKU003": 21,
+      "SKU007": 5,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K152",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Patel",
+    "phone": "9876489301",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU001",
+      "SKU009",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU005": 21,
+      "SKU001": 21,
+      "SKU009": 5,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K153",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Verma",
+    "phone": "9876291802",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU008",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU009": 5,
+      "SKU008": 10,
+      "SKU005": 7,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K154",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Patel",
+    "phone": "9855246430",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU003",
+      "SKU005",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU004": 14,
+      "SKU003": 21,
+      "SKU005": 10,
+      "SKU006": 5
+    }
+  },
+  {
+    "store_id": "K155",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Thakur",
+    "phone": "9828872606",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU004",
+      "SKU001",
+      "SKU003",
+      "SKU009",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU004": 10,
+      "SKU001": 10,
+      "SKU003": 10,
+      "SKU009": 21,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K156",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Jain",
+    "phone": "9841715995",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU008",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU002": 7,
+      "SKU008": 14,
+      "SKU005": 21
+    }
+  },
+  {
+    "store_id": "K157",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Sharma",
+    "phone": "9892493631",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU003",
+      "SKU008",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU003": 21,
+      "SKU008": 10,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K158",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Verma",
+    "phone": "9839314711",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU008",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU010": 10,
+      "SKU002": 5,
+      "SKU008": 21,
+      "SKU005": 5
+    }
+  },
+  {
+    "store_id": "K159",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Pandey",
+    "phone": "9886866717",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU006": 21,
+      "SKU008": 14,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K160",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Verma",
+    "phone": "9827709269",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU010",
+      "SKU006",
+      "SKU003",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU008": 14,
+      "SKU001": 10,
+      "SKU010": 5,
+      "SKU006": 7,
+      "SKU003": 21,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K161",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9818557710",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU008": 14,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K162",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Thakur",
+    "phone": "9861335545",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU010",
+      "SKU002",
+      "SKU006",
+      "SKU009",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU010": 10,
+      "SKU002": 5,
+      "SKU006": 7,
+      "SKU009": 21,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K163",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Patel",
+    "phone": "9813051483",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU007",
+      "SKU005",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU009": 7,
+      "SKU007": 14,
+      "SKU005": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K164",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Yadav",
+    "phone": "9898610233",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU001",
+      "SKU004",
+      "SKU002",
+      "SKU009",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU001": 5,
+      "SKU004": 14,
+      "SKU002": 21,
+      "SKU009": 5,
+      "SKU006": 7
+    }
+  },
+  {
+    "store_id": "K165",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9882445335",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU003",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU003": 10,
+      "SKU005": 21,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K166",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Yadav",
+    "phone": "9898612211",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU005",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU005": 21,
+      "SKU009": 7,
+      "SKU001": 14
+    }
+  },
+  {
+    "store_id": "K167",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Verma",
+    "phone": "9896344420",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU007",
+      "SKU004",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU006": 7,
+      "SKU007": 21,
+      "SKU004": 14,
+      "SKU002": 7,
+      "SKU003": 7
+    }
+  },
+  {
+    "store_id": "K168",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Patel",
+    "phone": "9885482164",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU003",
+      "SKU004",
+      "SKU002",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU009": 10,
+      "SKU003": 5,
+      "SKU004": 14,
+      "SKU002": 10,
+      "SKU008": 5
+    }
+  },
+  {
+    "store_id": "K169",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9860622628",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU004": 7,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K170",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Gupta",
+    "phone": "9825745913",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU010",
+      "SKU007",
+      "SKU002",
+      "SKU005",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU010": 14,
+      "SKU007": 14,
+      "SKU002": 21,
+      "SKU005": 10,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K171",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Shah",
+    "phone": "9872546007",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU006",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU006": 10,
+      "SKU004": 14
+    }
+  },
+  {
+    "store_id": "K172",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Mishra",
+    "phone": "9829585415",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU005": 10,
+      "SKU009": 7,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K173",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Yadav",
+    "phone": "9842981324",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU005",
+      "SKU007",
+      "SKU004",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU009": 14,
+      "SKU006": 7,
+      "SKU005": 10,
+      "SKU007": 7,
+      "SKU004": 7,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K174",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Patel",
+    "phone": "9817882882",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU001": 7,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K175",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Patel",
+    "phone": "9877878323",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU008",
+      "SKU010",
+      "SKU004",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU001": 21,
+      "SKU008": 21,
+      "SKU010": 14,
+      "SKU004": 5,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K176",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Jain",
+    "phone": "9812300840",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU009",
+      "SKU005",
+      "SKU008",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU002": 21,
+      "SKU009": 21,
+      "SKU005": 10,
+      "SKU008": 10,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K177",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Sharma",
+    "phone": "9871605634",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU002",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU005": 5,
+      "SKU002": 14,
+      "SKU006": 14
+    }
+  },
+  {
+    "store_id": "K178",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Pandey",
+    "phone": "9895462880",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU002": 10,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K179",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9838375916",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU001",
+      "SKU002",
+      "SKU006",
+      "SKU003",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU005": 21,
+      "SKU001": 5,
+      "SKU002": 7,
+      "SKU006": 10,
+      "SKU003": 5,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K180",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Patel",
+    "phone": "9850168264",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU007",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU004": 10,
+      "SKU007": 14,
+      "SKU006": 7
+    }
+  },
+  {
+    "store_id": "K181",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9823111164",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU002",
+      "SKU006",
+      "SKU005",
+      "SKU007",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU002": 10,
+      "SKU006": 5,
+      "SKU005": 10,
+      "SKU007": 14,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K182",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Shah",
+    "phone": "9867961650",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU007",
+      "SKU002",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU007": 10,
+      "SKU002": 7,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K183",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Jain",
+    "phone": "9895080736",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU006",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU006": 5,
+      "SKU009": 10,
+      "SKU001": 14
+    }
+  },
+  {
+    "store_id": "K184",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Jain",
+    "phone": "9821716836",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU008",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU008": 5,
+      "SKU010": 10,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K185",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Mishra",
+    "phone": "9861705758",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU007",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU007": 21,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K186",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Pandey",
+    "phone": "9861100987",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU005",
+      "SKU009",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU005": 7,
+      "SKU009": 5,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K187",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Jain",
+    "phone": "9874992426",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU005",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 14,
+      "SKU005": 21,
+      "SKU004": 21
+    }
+  },
+  {
+    "store_id": "K188",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Verma",
+    "phone": "9850890504",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU006",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU007": 10,
+      "SKU006": 14,
+      "SKU010": 10
+    }
+  },
+  {
+    "store_id": "K189",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Thakur",
+    "phone": "9850323741",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU008",
+      "SKU003",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU004": 10,
+      "SKU008": 10,
+      "SKU003": 14,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K190",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Shah",
+    "phone": "9862738860",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU003",
+      "SKU006",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU002": 5,
+      "SKU004": 14,
+      "SKU003": 7,
+      "SKU006": 14,
+      "SKU005": 10
+    }
+  },
+  {
+    "store_id": "K191",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9895004924",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU003",
+      "SKU006",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU005": 5,
+      "SKU003": 14,
+      "SKU006": 21,
+      "SKU010": 14
+    }
+  },
+  {
+    "store_id": "K192",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Choudhary",
+    "phone": "9866143368",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU009",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU009": 7,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K193",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Thakur",
+    "phone": "9885594147",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU007",
+      "SKU002",
+      "SKU001",
+      "SKU009",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU006": 7,
+      "SKU007": 21,
+      "SKU002": 21,
+      "SKU001": 21,
+      "SKU009": 21,
+      "SKU003": 21
+    }
+  },
+  {
+    "store_id": "K194",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Verma",
+    "phone": "9872151291",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU001": 14,
+      "SKU008": 5,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K195",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Shah",
+    "phone": "9871113711",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU008",
+      "SKU006",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU009": 5,
+      "SKU008": 14,
+      "SKU006": 14,
+      "SKU004": 10
+    }
+  },
+  {
+    "store_id": "K196",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Jain",
+    "phone": "9825446483",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU002",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU006": 7,
+      "SKU002": 21,
+      "SKU003": 7
+    }
+  },
+  {
+    "store_id": "K197",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Patel",
+    "phone": "9867226329",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU007",
+      "SKU003",
+      "SKU002",
+      "SKU006",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU007": 5,
+      "SKU003": 21,
+      "SKU002": 7,
+      "SKU006": 14,
+      "SKU010": 21
+    }
+  },
+  {
+    "store_id": "K198",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Choudhary",
+    "phone": "9838829445",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU005": 21,
+      "SKU002": 7,
+      "SKU009": 10,
+      "SKU007": 10
+    }
+  },
+  {
+    "store_id": "K199",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Verma",
+    "phone": "9875697427",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU007",
+      "SKU009",
+      "SKU005",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU010": 10,
+      "SKU007": 10,
+      "SKU009": 14,
+      "SKU005": 21,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K200",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Mishra",
+    "phone": "9827978165",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU004",
+      "SKU005",
+      "SKU001",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU004": 7,
+      "SKU005": 21,
+      "SKU001": 14,
+      "SKU010": 14
+    }
+  },
+  {
+    "store_id": "K201",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Patel",
+    "phone": "9866779304",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU009": 14,
+      "SKU003": 10,
+      "SKU005": 7
+    }
+  },
+  {
+    "store_id": "K202",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Shah",
+    "phone": "9817195581",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU008",
+      "SKU003",
+      "SKU002",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU008": 21,
+      "SKU003": 14,
+      "SKU002": 14,
+      "SKU004": 14
+    }
+  },
+  {
+    "store_id": "K203",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Verma",
+    "phone": "9821095863",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU005": 7,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K204",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Patel",
+    "phone": "9876479831",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU010": 21,
+      "SKU002": 10,
+      "SKU005": 21
+    }
+  },
+  {
+    "store_id": "K205",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Verma",
+    "phone": "9867063296",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU004": 14,
+      "SKU005": 10,
+      "SKU001": 10
+    }
+  },
+  {
+    "store_id": "K206",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Verma",
+    "phone": "9838169370",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU007",
+      "SKU003",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU007": 7,
+      "SKU003": 5,
+      "SKU005": 21,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K207",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Jain",
+    "phone": "9832599227",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU010",
+      "SKU009",
+      "SKU007",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU010": 7,
+      "SKU009": 14,
+      "SKU007": 5,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K208",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Patel",
+    "phone": "9853231088",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU008",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU007": 10,
+      "SKU008": 14,
+      "SKU003": 14,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K209",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Thakur",
+    "phone": "9879204468",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU008",
+      "SKU009",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU008": 5,
+      "SKU009": 14,
+      "SKU003": 10,
+      "SKU005": 5
+    }
+  },
+  {
+    "store_id": "K210",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Choudhary",
+    "phone": "9838434222",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU006",
+      "SKU010",
+      "SKU003",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU006": 21,
+      "SKU010": 14,
+      "SKU003": 10,
+      "SKU008": 5,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K211",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Thakur",
+    "phone": "9826674831",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU010",
+      "SKU001",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU010": 7,
+      "SKU001": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K212",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Sharma",
+    "phone": "9821062296",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU001",
+      "SKU007",
+      "SKU006",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU001": 14,
+      "SKU007": 5,
+      "SKU006": 5,
+      "SKU010": 5
+    }
+  },
+  {
+    "store_id": "K213",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Verma",
+    "phone": "9889682313",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU008",
+      "SKU001",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU009": 10,
+      "SKU008": 5,
+      "SKU001": 14,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K214",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Sharma",
+    "phone": "9821989814",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU006": 7,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K215",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Thakur",
+    "phone": "9881203615",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU003",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU010": 10,
+      "SKU003": 7,
+      "SKU008": 7
+    }
+  },
+  {
+    "store_id": "K216",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Mishra",
+    "phone": "9821635070",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU003": 10,
+      "SKU002": 14,
+      "SKU007": 10
+    }
+  },
+  {
+    "store_id": "K217",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Yadav",
+    "phone": "9821307671",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU005",
+      "SKU001",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU009": 10,
+      "SKU005": 7,
+      "SKU001": 21,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K218",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9896727439",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU008",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU008": 7,
+      "SKU007": 14
+    }
+  },
+  {
+    "store_id": "K219",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Sharma",
+    "phone": "9858465780",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU007",
+      "SKU009",
+      "SKU010",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU007": 14,
+      "SKU009": 5,
+      "SKU010": 5,
+      "SKU005": 21
+    }
+  },
+  {
+    "store_id": "K220",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Gupta",
+    "phone": "9815345470",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU009": 14,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K221",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Sharma",
+    "phone": "9892684436",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU005": 21,
+      "SKU002": 7,
+      "SKU010": 7,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K222",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Choudhary",
+    "phone": "9897219985",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU007",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU007": 7,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K223",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Sharma",
+    "phone": "9891716102",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU003",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU003": 7,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K224",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9879420474",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU010",
+      "SKU009",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU006": 5,
+      "SKU010": 10,
+      "SKU009": 14,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K225",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Sharma",
+    "phone": "9887396877",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU010",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU010": 14,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K226",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Shah",
+    "phone": "9823811663",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU009": 5,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K227",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Verma",
+    "phone": "9830144023",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU009",
+      "SKU007",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU001": 10,
+      "SKU009": 7,
+      "SKU007": 14,
+      "SKU002": 10
+    }
+  },
+  {
+    "store_id": "K228",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Sharma",
+    "phone": "9826025721",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU004",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU004": 5,
+      "SKU001": 14
+    }
+  },
+  {
+    "store_id": "K229",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Jain",
+    "phone": "9884234670",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU006",
+      "SKU004",
+      "SKU003",
+      "SKU005",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU001": 21,
+      "SKU006": 7,
+      "SKU004": 14,
+      "SKU003": 10,
+      "SKU005": 21,
+      "SKU007": 14
+    }
+  },
+  {
+    "store_id": "K230",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Pandey",
+    "phone": "9810856024",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU004",
+      "SKU006",
+      "SKU008",
+      "SKU007",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU001": 10,
+      "SKU004": 5,
+      "SKU006": 14,
+      "SKU008": 10,
+      "SKU007": 5,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K231",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9818038980",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 21,
+      "SKU002": 14,
+      "SKU001": 10,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K232",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Mishra",
+    "phone": "9827919925",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU001",
+      "SKU007",
+      "SKU006",
+      "SKU010",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU002": 10,
+      "SKU001": 10,
+      "SKU007": 10,
+      "SKU006": 14,
+      "SKU010": 10,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K233",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Jain",
+    "phone": "9837207628",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU003",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU002": 14,
+      "SKU003": 14,
+      "SKU001": 10
+    }
+  },
+  {
+    "store_id": "K234",
+    "store_name": "Santosh Kirana & General Store",
+    "owner_name": "Santosh Sharma",
+    "phone": "9837868462",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU008",
+      "SKU010",
+      "SKU007",
+      "SKU001",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU008": 10,
+      "SKU010": 21,
+      "SKU007": 5,
+      "SKU001": 7,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K235",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Sharma",
+    "phone": "9863183031",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU010",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU005": 5,
+      "SKU010": 14,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K236",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Pandey",
+    "phone": "9872014395",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU002": 7,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K237",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Choudhary",
+    "phone": "9894597104",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU005": 5,
+      "SKU002": 7
+    }
+  },
+  {
+    "store_id": "K238",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Patel",
+    "phone": "9826445384",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU001": 14,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K239",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9867265875",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU004",
+      "SKU003",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU004": 14,
+      "SKU003": 7,
+      "SKU008": 5
+    }
+  },
+  {
+    "store_id": "K240",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Mishra",
+    "phone": "9896876236",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU007",
+      "SKU010",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU008": 10,
+      "SKU007": 14,
+      "SKU010": 7,
+      "SKU001": 14,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K241",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9861338023",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU010",
+      "SKU003",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU008": 21,
+      "SKU009": 10,
+      "SKU010": 14,
+      "SKU003": 10,
+      "SKU005": 7
+    }
+  },
+  {
+    "store_id": "K242",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Shah",
+    "phone": "9813933043",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU008",
+      "SKU006",
+      "SKU007",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU001": 7,
+      "SKU008": 7,
+      "SKU006": 5,
+      "SKU007": 7,
+      "SKU005": 7
+    }
+  },
+  {
+    "store_id": "K243",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Pandey",
+    "phone": "9887268086",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU003",
+      "SKU009",
+      "SKU002",
+      "SKU005",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU003": 21,
+      "SKU009": 5,
+      "SKU002": 10,
+      "SKU005": 21,
+      "SKU008": 21
+    }
+  },
+  {
+    "store_id": "K244",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Mishra",
+    "phone": "9882762732",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU008",
+      "SKU001",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU008": 21,
+      "SKU001": 7,
+      "SKU009": 5,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K245",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9837040091",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU003",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU003": 7,
+      "SKU010": 21,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K246",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9860142505",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU006",
+      "SKU003",
+      "SKU007",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU002": 14,
+      "SKU006": 14,
+      "SKU003": 10,
+      "SKU007": 7,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K247",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Shah",
+    "phone": "9889047551",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU005",
+      "SKU009",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU005": 5,
+      "SKU009": 21,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K248",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Gupta",
+    "phone": "9852710350",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU010": 10,
+      "SKU002": 5,
+      "SKU008": 7,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K249",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Patel",
+    "phone": "9899929175",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU001",
+      "SKU005",
+      "SKU002",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU001": 10,
+      "SKU005": 10,
+      "SKU002": 5,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K250",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9866324902",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU008",
+      "SKU010",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU008": 14,
+      "SKU010": 5,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K251",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Thakur",
+    "phone": "9870570772",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU005",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU001": 10,
+      "SKU005": 10,
+      "SKU010": 5
+    }
+  },
+  {
+    "store_id": "K252",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Shah",
+    "phone": "9831596235",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU002",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU002": 21,
+      "SKU006": 14
+    }
+  },
+  {
+    "store_id": "K253",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9868277389",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU002",
+      "SKU006",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU001": 7,
+      "SKU002": 14,
+      "SKU006": 21,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K254",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Thakur",
+    "phone": "9841883191",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU007",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU001": 7,
+      "SKU007": 5,
+      "SKU008": 10
+    }
+  },
+  {
+    "store_id": "K255",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9898854850",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU002",
+      "SKU001",
+      "SKU009",
+      "SKU007",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU002": 14,
+      "SKU001": 5,
+      "SKU009": 10,
+      "SKU007": 14,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K256",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Thakur",
+    "phone": "9896149847",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU006",
+      "SKU007",
+      "SKU010",
+      "SKU002",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU006": 10,
+      "SKU007": 14,
+      "SKU010": 14,
+      "SKU002": 10,
+      "SKU004": 7
+    }
+  },
+  {
+    "store_id": "K257",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Mishra",
+    "phone": "9899586100",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU006",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU006": 7,
+      "SKU007": 21
+    }
+  },
+  {
+    "store_id": "K258",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Choudhary",
+    "phone": "9881875527",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU004",
+      "SKU008",
+      "SKU003",
+      "SKU001",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU010": 5,
+      "SKU004": 21,
+      "SKU008": 21,
+      "SKU003": 21,
+      "SKU001": 21,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K259",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Sharma",
+    "phone": "9832436477",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU003",
+      "SKU001",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU003": 14,
+      "SKU001": 7,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K260",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Jain",
+    "phone": "9818994192",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU009",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU007": 21,
+      "SKU009": 10,
+      "SKU010": 10
+    }
+  },
+  {
+    "store_id": "K261",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Verma",
+    "phone": "9893625419",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU002",
+      "SKU007",
+      "SKU003",
+      "SKU010",
+      "SKU005",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU002": 21,
+      "SKU007": 5,
+      "SKU003": 5,
+      "SKU010": 21,
+      "SKU005": 5,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K262",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Shah",
+    "phone": "9861411224",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU008",
+      "SKU001",
+      "SKU002",
+      "SKU003",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU010": 7,
+      "SKU008": 21,
+      "SKU001": 21,
+      "SKU002": 14,
+      "SKU003": 5,
+      "SKU004": 14
+    }
+  },
+  {
+    "store_id": "K263",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Yadav",
+    "phone": "9873782705",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU010",
+      "SKU007",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU001": 10,
+      "SKU010": 14,
+      "SKU007": 5,
+      "SKU003": 7
+    }
+  },
+  {
+    "store_id": "K264",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Jain",
+    "phone": "9846160937",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU010",
+      "SKU002",
+      "SKU004",
+      "SKU008",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU010": 14,
+      "SKU002": 21,
+      "SKU004": 10,
+      "SKU008": 5,
+      "SKU009": 21,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K265",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Jain",
+    "phone": "9828206610",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU004",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU004": 7,
+      "SKU009": 5
+    }
+  },
+  {
+    "store_id": "K266",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9836724061",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU008",
+      "SKU007",
+      "SKU010",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU008": 7,
+      "SKU007": 10,
+      "SKU010": 14,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K267",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Patel",
+    "phone": "9883998759",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU003",
+      "SKU005",
+      "SKU010",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU003": 10,
+      "SKU005": 5,
+      "SKU010": 14,
+      "SKU007": 5
+    }
+  },
+  {
+    "store_id": "K268",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Mishra",
+    "phone": "9896889858",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU005",
+      "SKU007",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU005": 5,
+      "SKU007": 14,
+      "SKU009": 7
+    }
+  },
+  {
+    "store_id": "K269",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Mishra",
+    "phone": "9843875271",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU007",
+      "SKU009",
+      "SKU008",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU005": 14,
+      "SKU007": 10,
+      "SKU009": 7,
+      "SKU008": 14,
+      "SKU003": 10
+    }
+  },
+  {
+    "store_id": "K270",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Mishra",
+    "phone": "9823732098",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU006",
+      "SKU005"
+    ],
+    "cycle_days": {
+      "SKU009": 10,
+      "SKU006": 5,
+      "SKU005": 14
+    }
+  },
+  {
+    "store_id": "K271",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Shah",
+    "phone": "9853639158",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU010",
+      "SKU004",
+      "SKU002",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 7,
+      "SKU010": 5,
+      "SKU004": 21,
+      "SKU002": 14,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K272",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Gupta",
+    "phone": "9844819604",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU010",
+      "SKU001",
+      "SKU005",
+      "SKU006",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU007": 7,
+      "SKU010": 10,
+      "SKU001": 7,
+      "SKU005": 21,
+      "SKU006": 14,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K273",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Jain",
+    "phone": "9884926784",
+    "area": "Dombivli West",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 10,
+      "SKU002": 21,
+      "SKU008": 7,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K274",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Yadav",
+    "phone": "9851216287",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU010",
+      "SKU005",
+      "SKU008",
+      "SKU003",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU010": 14,
+      "SKU005": 5,
+      "SKU008": 21,
+      "SKU003": 21,
+      "SKU004": 21
+    }
+  },
+  {
+    "store_id": "K275",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Verma",
+    "phone": "9826081422",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU005",
+      "SKU007",
+      "SKU001",
+      "SKU002",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU005": 10,
+      "SKU007": 14,
+      "SKU001": 21,
+      "SKU002": 14,
+      "SKU006": 7
+    }
+  },
+  {
+    "store_id": "K276",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Patel",
+    "phone": "9854644768",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU001",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU006": 10,
+      "SKU001": 7,
+      "SKU009": 7,
+      "SKU004": 21
+    }
+  },
+  {
+    "store_id": "K277",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Verma",
+    "phone": "9892474074",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU007",
+      "SKU010",
+      "SKU009",
+      "SKU004",
+      "SKU008",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU007": 5,
+      "SKU010": 21,
+      "SKU009": 7,
+      "SKU004": 10,
+      "SKU008": 5,
+      "SKU001": 10
+    }
+  },
+  {
+    "store_id": "K278",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Yadav",
+    "phone": "9810553491",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU006",
+      "SKU005",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU004": 5,
+      "SKU006": 14,
+      "SKU005": 21,
+      "SKU002": 21
+    }
+  },
+  {
+    "store_id": "K279",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Patel",
+    "phone": "9850024028",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU009",
+      "SKU006",
+      "SKU004",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU009": 10,
+      "SKU006": 14,
+      "SKU004": 10,
+      "SKU010": 7
+    }
+  },
+  {
+    "store_id": "K280",
+    "store_name": "Mahesh Kirana & General Store",
+    "owner_name": "Mahesh Choudhary",
+    "phone": "9840107903",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU004",
+      "SKU001",
+      "SKU003",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU001": 5,
+      "SKU003": 14,
+      "SKU009": 10
+    }
+  },
+  {
+    "store_id": "K281",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Mishra",
+    "phone": "9816437132",
+    "area": "Kalyan West",
+    "city": "Kalyan",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU010",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU001": 14,
+      "SKU010": 14,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K282",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Pandey",
+    "phone": "9830552371",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU001",
+      "SKU005",
+      "SKU007",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU001": 5,
+      "SKU005": 21,
+      "SKU007": 10,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K283",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Patel",
+    "phone": "9878663747",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU002",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU005": 14,
+      "SKU002": 7,
+      "SKU009": 21
+    }
+  },
+  {
+    "store_id": "K284",
+    "store_name": "Rajesh Kirana & General Store",
+    "owner_name": "Rajesh Jain",
+    "phone": "9858039455",
+    "area": "Mulund West",
+    "city": "Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU005",
+      "SKU003",
+      "SKU001",
+      "SKU010",
+      "SKU004",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU005": 14,
+      "SKU003": 10,
+      "SKU001": 7,
+      "SKU010": 5,
+      "SKU004": 5,
+      "SKU002": 5
+    }
+  },
+  {
+    "store_id": "K285",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Mishra",
+    "phone": "9822090691",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU005",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU005": 10,
+      "SKU004": 10
+    }
+  },
+  {
+    "store_id": "K286",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Gupta",
+    "phone": "9815294153",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU006",
+      "SKU010",
+      "SKU007",
+      "SKU009",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU010": 5,
+      "SKU007": 5,
+      "SKU009": 7,
+      "SKU001": 7
+    }
+  },
+  {
+    "store_id": "K287",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Shah",
+    "phone": "9846011877",
+    "area": "Vashi",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU006",
+      "SKU010",
+      "SKU003"
+    ],
+    "cycle_days": {
+      "SKU006": 5,
+      "SKU010": 14,
+      "SKU003": 14
+    }
+  },
+  {
+    "store_id": "K288",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Jain",
+    "phone": "9874188958",
+    "area": "Ghansoli",
+    "city": "Navi Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU002",
+      "SKU010",
+      "SKU006",
+      "SKU007",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU003": 7,
+      "SKU002": 5,
+      "SKU010": 14,
+      "SKU006": 21,
+      "SKU007": 14,
+      "SKU001": 21
+    }
+  },
+  {
+    "store_id": "K289",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Patel",
+    "phone": "9858130331",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU008",
+      "SKU009"
+    ],
+    "cycle_days": {
+      "SKU003": 5,
+      "SKU008": 14,
+      "SKU009": 14
+    }
+  },
+  {
+    "store_id": "K290",
+    "store_name": "Ramesh Kirana & General Store",
+    "owner_name": "Ramesh Sharma",
+    "phone": "9852176303",
+    "area": "Thane West",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU009",
+      "SKU004",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU009": 21,
+      "SKU004": 21,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K291",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9856405710",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU003",
+      "SKU009",
+      "SKU001",
+      "SKU008",
+      "SKU006",
+      "SKU002"
+    ],
+    "cycle_days": {
+      "SKU003": 21,
+      "SKU009": 14,
+      "SKU001": 14,
+      "SKU008": 7,
+      "SKU006": 5,
+      "SKU002": 14
+    }
+  },
+  {
+    "store_id": "K292",
+    "store_name": "Mukesh Kirana & General Store",
+    "owner_name": "Mukesh Yadav",
+    "phone": "9816757958",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU009",
+      "SKU007",
+      "SKU010",
+      "SKU008"
+    ],
+    "cycle_days": {
+      "SKU009": 7,
+      "SKU007": 5,
+      "SKU010": 14,
+      "SKU008": 14
+    }
+  },
+  {
+    "store_id": "K293",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Verma",
+    "phone": "9870004467",
+    "area": "Kalyan East",
+    "city": "Kalyan",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU002",
+      "SKU008",
+      "SKU001",
+      "SKU009",
+      "SKU004"
+    ],
+    "cycle_days": {
+      "SKU002": 14,
+      "SKU008": 5,
+      "SKU001": 21,
+      "SKU009": 21,
+      "SKU004": 5
+    }
+  },
+  {
+    "store_id": "K294",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Mishra",
+    "phone": "9850882445",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU008",
+      "SKU006",
+      "SKU009",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU008": 5,
+      "SKU006": 7,
+      "SKU009": 14,
+      "SKU007": 10
+    }
+  },
+  {
+    "store_id": "K295",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Mishra",
+    "phone": "9898203489",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Medium Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU002",
+      "SKU009",
+      "SKU007",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU008": 7,
+      "SKU002": 5,
+      "SKU009": 10,
+      "SKU007": 10,
+      "SKU006": 10
+    }
+  },
+  {
+    "store_id": "K296",
+    "store_name": "Vijay Kirana & General Store",
+    "owner_name": "Vijay Pandey",
+    "phone": "9824270328",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU003",
+      "SKU008",
+      "SKU010"
+    ],
+    "cycle_days": {
+      "SKU003": 14,
+      "SKU008": 5,
+      "SKU010": 10
+    }
+  },
+  {
+    "store_id": "K297",
+    "store_name": "Pravin Kirana & General Store",
+    "owner_name": "Pravin Yadav",
+    "phone": "9862733674",
+    "area": "Dombivli East",
+    "city": "Dombivli",
+    "store_type": "Small Kirana",
+    "core_skus": [
+      "SKU008",
+      "SKU004",
+      "SKU006",
+      "SKU001"
+    ],
+    "cycle_days": {
+      "SKU008": 14,
+      "SKU004": 5,
+      "SKU006": 21,
+      "SKU001": 5
+    }
+  },
+  {
+    "store_id": "K298",
+    "store_name": "Ashok Kirana & General Store",
+    "owner_name": "Ashok Verma",
+    "phone": "9828070539",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU001",
+      "SKU009",
+      "SKU010",
+      "SKU005",
+      "SKU004",
+      "SKU007"
+    ],
+    "cycle_days": {
+      "SKU001": 14,
+      "SKU009": 21,
+      "SKU010": 7,
+      "SKU005": 21,
+      "SKU004": 7,
+      "SKU007": 7
+    }
+  },
+  {
+    "store_id": "K299",
+    "store_name": "Suresh Kirana & General Store",
+    "owner_name": "Suresh Choudhary",
+    "phone": "9853197138",
+    "area": "Bhandup",
+    "city": "Mumbai",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU007",
+      "SKU004",
+      "SKU005",
+      "SKU009",
+      "SKU003",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU007": 14,
+      "SKU004": 7,
+      "SKU005": 7,
+      "SKU009": 14,
+      "SKU003": 21,
+      "SKU006": 21
+    }
+  },
+  {
+    "store_id": "K300",
+    "store_name": "Dinesh Kirana & General Store",
+    "owner_name": "Dinesh Pandey",
+    "phone": "9884300459",
+    "area": "Naupada",
+    "city": "Thane",
+    "store_type": "Superette / Provision Store",
+    "core_skus": [
+      "SKU004",
+      "SKU010",
+      "SKU005",
+      "SKU006"
+    ],
+    "cycle_days": {
+      "SKU004": 10,
+      "SKU010": 7,
+      "SKU005": 7,
+      "SKU006": 21
+    }
+  }
+]

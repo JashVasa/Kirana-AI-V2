@@ -1,0 +1,106 @@
+id|brand|product|size|mrp|case|cat|extra
+oil1|Fortune|Sunflower Oil|1L|135|12|oil|
+oil5|Fortune|Sunflower Oil|5L|690|4|oil|*
+saf|Saffola|Gold Oil|1L|185|12|oil|
+sar|Dhara|Kachi Ghani Mustard Oil|1L|165|12|oil|sarson sarso
+-|Sundrop|Heart Oil|1L|180|12|oil|
+-|Gemini|Sunflower Oil|1L|140|12|oil|
+-|Patanjali|Mustard Oil|1L|170|12|oil|sarson
+-|Freedom|Refined Sunflower Oil|1L|135|12|oil|
+-|Nature Fresh|Groundnut Oil|1L|215|12|oil|moongfali
+-|Emami|Rice Bran Oil|1L|150|12|oil|
+-|Amul|Ghee|1L|680|12|ghee|
+-|Patanjali|Cow Ghee|1L|640|12|ghee|
+-|Amul|Taaza Milk|1L|68|12|milk|
+-|Nestle|Milkmaid|400g|150|24|milk|
+butter100|Amul|Butter|100g|58|40|butter|
+butter500|Amul|Butter|500g|285|20|butter|
+-|Mother Dairy|Butter|100g|58|40|butter|
+-|Amul|Cheese Slices|200g|140|24|cheese|
+atta5|Aashirvaad|Atta|5kg|265|4|atta|ashirvad aashirwad ashirwad
+atta10|Aashirvaad|Atta|10kg|520|2|atta|ashirvad aashirwad ashirwad
+-|Pillsbury|Chakki Atta|5kg|250|4|atta|
+-|Fortune|Chakki Fresh Atta|5kg|255|4|atta|
+-|Rajdhani|Besan|500g|60|20|atta|
+-|Patanjali|Maida|1kg|45|20|atta|
+-|India Gate|Basmati Rice|5kg|650|4|rice|
+-|Daawat|Basmati Rice|5kg|600|4|rice|
+-|Kohinoor|Basmati Rice|5kg|620|4|rice|
+-|Lal Qilla|Basmati Rice|5kg|580|4|rice|
+sugar|Madhur|Sugar|5kg|230|6|sugar|
+-|Madhur|Sugar|1kg|48|25|sugar|
+salt|Tata|Salt|1kg|28|25|salt|
+-|Aashirvaad|Iodised Salt|1kg|26|25|salt|
+toor|Sampann|Toor Dal|1kg|165|10|dal|tuvar arhar
+-|Sampann|Chana Dal|1kg|140|10|dal|
+-|Sampann|Moong Dal|1kg|150|10|dal|
+-|Sampann|Masoor Dal|1kg|120|10|dal|
+-|Sampann|Urad Dal|1kg|155|10|dal|
+-|Nutrela|Soya Chunks|220g|50|24|soya|
+-|MDH|Garam Masala|100g|85|48|spice|
+-|MDH|Chana Masala|100g|80|48|spice|
+-|MDH|Chaat Masala|100g|78|48|spice|
+-|Everest|Turmeric Powder|200g|75|48|spice|haldi
+-|Everest|Red Chilli Powder|200g|95|48|spice|mirchi lal
+-|Everest|Coriander Powder|200g|60|48|spice|dhania
+-|Everest|Kitchen King Masala|100g|85|48|spice|
+-|Everest|Pav Bhaji Masala|100g|78|48|spice|
+-|Catch|Cumin Seeds|100g|70|48|spice|jeera
+tea|Tata|Tea Red Label|250g|135|24|tea|red label
+-|Tata|Tea Gold|250g|160|24|tea|
+-|Taj Mahal|Tea|250g|170|24|tea|
+-|Wagh Bakri|Tea|250g|140|24|tea|
+-|Nescafe|Classic Coffee|50g|175|24|coffee|
+-|Bru|Instant Coffee|50g|160|24|coffee|
+-|Horlicks|Classic Malt|500g|245|12|health|
+-|Cadbury|Bournvita|500g|245|12|health|
+-|Boost|Health Drink|500g|250|12|health|
+parle|Parle-G|Biscuit|56g|5|120|biscuit|
+goodday|Britannia|Good Day Cookies|100g|10|72|biscuit|
+-|Britannia|Marie Gold|250g|40|36|biscuit|
+-|Parle|Monaco Biscuit|75g|20|48|biscuit|
+-|Sunfeast|Dark Fantasy|100g|40|48|biscuit|
+-|Oreo|Biscuit|120g|40|48|biscuit|
+-|Britannia|Bourbon|100g|30|48|biscuit|
+-|Lays|Classic Salted Chips|52g|20|60|snack|
+-|Kurkure|Masala Munch|90g|20|60|snack|
+-|Haldiram|Aloo Bhujia|200g|55|30|snack|
+-|Haldiram|Moong Dal Namkeen|200g|55|30|snack|
+maggi|Maggi|2-Minute Noodles|70g|14|48|noodle|
+-|Yippee|Noodles|70g|14|48|noodle|
+-|Top Ramen|Curry Noodles|70g|14|48|noodle|
+-|Kissan|Tomato Ketchup|500g|110|24|sauce|
+-|Kissan|Mixed Fruit Jam|500g|165|24|jam|
+-|Priya|Mango Pickle|500g|140|24|pickle|
+-|Coca-Cola|Soft Drink|750ml|40|24|drink|coke
+-|Pepsi|Soft Drink|750ml|40|24|drink|
+-|Thums Up|Soft Drink|750ml|40|24|drink|
+-|Sprite|Soft Drink|750ml|40|24|drink|
+-|Real|Fruit Juice|1L|120|12|drink|
+-|Bisleri|Packaged Water|1L|20|12|water|
+lifebuoy|Lifebuoy|Total Soap|100g|32|72|soap|
+-|Lux|Soft Touch Soap|100g|40|72|soap|
+-|Dettol|Original Soap|125g|50|72|soap|
+-|Santoor|Sandal Soap|100g|40|72|soap|
+-|Pears|Pure Soap|125g|70|72|soap|
+-|Medimix|Ayurvedic Soap|125g|45|72|soap|
+-|Hamam|Soap|100g|35|72|soap|
+surf1|Surf Excel|Easy Wash|1kg|130|12|detergent|
+surf5|Surf Excel|Easy Wash|500g|68|24|detergent|
+-|Tide|Plus Detergent Powder|1kg|120|12|detergent|
+-|Ariel|Matic Detergent Powder|1kg|230|12|detergent|
+-|Wheel|Active Detergent Powder|1kg|75|12|detergent|
+-|Rin|Detergent Bar|250g|20|60|detergent|
+-|Vim|Dishwash Bar|300g|30|36|dish|
+-|Vim|Dishwash Gel|500ml|110|24|dish|
+-|Harpic|Toilet Cleaner|500ml|95|24|cleaner|
+-|Lizol|Floor Cleaner|500ml|105|24|cleaner|
+-|Colin|Glass Cleaner|500ml|95|24|cleaner|
+colgate|Colgate|Strong Teeth|200g|110|48|paste|
+-|Pepsodent|Germicheck Paste|200g|100|48|paste|
+-|Close Up|Red Hot Paste|150g|95|48|paste|
+-|Dabur|Red Paste|200g|105|48|paste|
+-|Patanjali|Dant Kanti|200g|100|48|paste|
+-|Clinic Plus|Shampoo|175ml|110|24|hair|
+-|Sunsilk|Shampoo|180ml|120|24|hair|
+-|Parachute|Coconut Oil|500ml|210|24|hairoil|

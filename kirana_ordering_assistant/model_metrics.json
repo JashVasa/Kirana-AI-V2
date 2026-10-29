@@ -1,0 +1,58 @@
+{
+  "random_forest": {
+    "accuracy": 80.1,
+    "precision": 58.9,
+    "recall": 94.3,
+    "f1": 72.5,
+    "cm": [
+      [
+        6458,
+        2202
+      ],
+      [
+        190,
+        3150
+      ]
+    ]
+  },
+  "baseline": {
+    "accuracy": 30.6,
+    "precision": 16.0,
+    "recall": 35.3,
+    "f1": 22.1,
+    "cm": [
+      [
+        2489,
+        6171
+      ],
+      [
+        2161,
+        1179
+      ]
+    ]
+  },
+  "training_metadata": {
+    "num_stores": 300,
+    "num_orders": 24008,
+    "train_samples": 45000,
+    "test_samples": 12000,
+    "features_used": [
+      "days_since_last",
+      "avg_interval",
+      "ratio_cycle",
+      "orders_last_30d",
+      "total_store_orders",
+      "sku_popularity",
+      "is_core"
+    ],
+    "feature_importances": {
+      "days_since_last": 0.2038,
+      "avg_interval": 0.1315,
+      "ratio_cycle": 0.1019,
+      "orders_last_30d": 0.1473,
+      "total_store_orders": 0.003,
+      "sku_popularity": 0.0008,
+      "is_core": 0.4117
+    }
+  }
+}

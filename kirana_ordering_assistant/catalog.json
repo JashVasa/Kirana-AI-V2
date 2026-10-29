@@ -1,0 +1,102 @@
+[
+  {
+    "sku": "SKU001",
+    "name": "Thums Up 500ml",
+    "category": "Beverages",
+    "pack_size": "24 bottles / peti",
+    "primary_unit": "peti",
+    "unit_price": 720.0,
+    "aliases": ["thums up", "thumbs up", "thumps up", "toofan", "tuphan", "thunder", "tums up"],
+    "description": "Carbonated soft drink pet bottles case"
+  },
+  {
+    "sku": "SKU002",
+    "name": "Tata Salt 1kg",
+    "category": "Staples",
+    "pack_size": "20 packets / bori",
+    "primary_unit": "peti",
+    "unit_price": 480.0,
+    "aliases": ["tata salt", "tata namak", "namak", "salt", "desh ka namak"],
+    "description": "Iodized vacuum evaporated salt sack"
+  },
+  {
+    "sku": "SKU003",
+    "name": "Fortune Sunlite Sunflower Oil 1L",
+    "category": "Edible Oils",
+    "pack_size": "15 pouches / peti",
+    "primary_unit": "peti",
+    "unit_price": 1950.0,
+    "aliases": ["fortune oil", "fortune sunflower oil", "fortune", "sunflower oil", "refined oil", "tel", "mitha tel"],
+    "description": "Refined sunflower edible cooking oil carton"
+  },
+  {
+    "sku": "SKU004",
+    "name": "Parle-G Gold 70g",
+    "category": "Biscuits",
+    "pack_size": "48 packets / carton",
+    "primary_unit": "carton",
+    "unit_price": 450.0,
+    "aliases": ["parle g", "parle-g", "parle gold", "biscuit", "parleg", "g biscuit"],
+    "description": "Glucose biscuits wholesale shipper"
+  },
+  {
+    "sku": "SKU005",
+    "name": "Maggi 2-Minute Masala Noodles 70g",
+    "category": "Packaged Food",
+    "pack_size": "24 packets / box",
+    "primary_unit": "box",
+    "unit_price": 330.0,
+    "aliases": ["maggi", "maggy", "noodles", "maggi noodles", "2 minute noodles"],
+    "description": "Instant masala noodles corrugated carton"
+  },
+  {
+    "sku": "SKU006",
+    "name": "Surf Excel Easy Wash Detergent Powder 1kg",
+    "category": "Home Care",
+    "pack_size": "10 packets / bag",
+    "primary_unit": "bag",
+    "unit_price": 1300.0,
+    "aliases": ["surf excel", "surf", "surf powder", "washing powder", "surf detergent"],
+    "description": "Laundry detergent wholesale bundle"
+  },
+  {
+    "sku": "SKU007",
+    "name": "Dettol Original Bathing Soap 100g",
+    "category": "Personal Care",
+    "pack_size": "48 bars / peti",
+    "primary_unit": "peti",
+    "unit_price": 1680.0,
+    "aliases": ["dettol", "dettol soap", "sabun", "dettol original", "bath soap"],
+    "description": "Antibacterial bathing bar bulk pack"
+  },
+  {
+    "sku": "SKU008",
+    "name": "Aashirvaad Shudh Chakki Atta 10kg",
+    "category": "Staples",
+    "pack_size": "1 bag / bori",
+    "primary_unit": "bori",
+    "unit_price": 420.0,
+    "aliases": ["aashirvaad atta", "ashirvad atta", "atta", "gehu ka atta", "wheat flour", "aashirwad"],
+    "description": "100% whole wheat flour 10kg sack"
+  },
+  {
+    "sku": "SKU009",
+    "name": "Coca-Cola Original 500ml",
+    "category": "Beverages",
+    "pack_size": "24 bottles / peti",
+    "primary_unit": "peti",
+    "unit_price": 720.0,
+    "aliases": ["coca cola", "coca-cola", "coke", "black cold drink"],
+    "description": "Classic carbonated beverage pet bottles case"
+  },
+  {
+    "sku": "SKU010",
+    "name": "Brooke Bond Red Label Tea 250g",
+    "category": "Beverages",
+    "pack_size": "20 packets / dabba",
+    "primary_unit": "dabba",
+    "unit_price": 1900.0,
+    "aliases": ["red label", "red label tea", "chai patti", "tea", "brooke bond"],
+    "description": "Black tea loose leaf corrugated pack"
+  }
+]

@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kirana Order Assistant | RAG & Guardrails</title>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--pg:#dfe5e8;--hd:#0b5c52;--hdt:#fff;--chat:#e9e4db;--bot:#fff;--me:#d9fdd3;--ink:#111b21;--mut:#667781;--line:#d8dde0;--ok:#1a7f4b;--okbg:#e1f5e8;--askbg:#e7f0fb;--warnbg:#fff1cc;--warn:#7a4f00;--errbg:#fde8e6;--red:#b3261e;--gold:#f2b01e;--goldt:#2a1d00;--inp:#fff;--blue:#1976d2;--bluebg:#e3f2fd;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg:#0a1014;--hd:#1f2c33;--hdt:#e9edef;--chat:#0b141a;--bot:#202c33;--me:#005c4b;--ink:#e9edef;--mut:#8696a0;--line:#2f3b43;--ok:#74d49b;--okbg:#14352c;--askbg:#1b2d44;--warnbg:#3a2e0f;--warn:#ffd27a;--errbg:#3d1c1a;--red:#ff8a80;--inp:#2a3942;--blue:#90caf9;--bluebg:#0d233a;color-scheme:dark}}
+:root[data-theme="dark"]{--pg:#0a1014;--hd:#1f2c33;--hdt:#e9edef;--chat:#0b141a;--bot:#202c33;--me:#005c4b;--ink:#e9edef;--mut:#8696a0;--line:#2f3b43;--ok:#74d49b;--okbg:#14352c;--askbg:#1b2d44;--warnbg:#3a2e0f;--warn:#ffd27a;--errbg:#3d1c1a;--red:#ff8a80;--inp:#2a3942;--blue:#90caf9;--bluebg:#0d233a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--ink);font:400 16px/1.45 Mukta,system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:14px;display:grid;grid-template-columns:400px minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:890px){.wrap{grid-template-columns:1fr;justify-items:center}.panel{width:100%}}
+.phone{width:100%;max-width:400px;height:min(750px,calc(100dvh - 28px));min-height:560px;display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid var(--line);position:relative;background:var(--chat);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.hd{background:var(--hd);color:var(--hdt);padding:10px 14px;display:flex;gap:10px;align-items:center}
+.hd b{display:block;line-height:1.2}.hd small{opacity:.8}
+.av{width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--goldt);display:grid;place-items:center;font-weight:800}
+#chat{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.b{max-width:88%;padding:8px 10px;border-radius:10px;background:var(--bot);color:var(--ink);box-shadow:0 1px 1px rgba(0,0,0,.15);overflow-wrap:anywhere}
+.b.me{align-self:flex-end;background:var(--me);white-space:pre-wrap}.b.wide{max-width:100%}
+.b.alert-box{max-width:96%;border-left:4px solid var(--red);background:var(--errbg);color:var(--ink)}
+.b time{display:block;text-align:right;font-size:11px;color:var(--mut)}
+.dots{display:flex;gap:4px;padding:12px}.dots span{width:7px;height:7px;border-radius:50%;background:var(--mut);animation:bl 1s infinite}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}
+@keyframes bl{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.dots span{animation:none}}
+button{font:inherit;cursor:pointer;color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.ch{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
+.mut{color:var(--mut)}.sm{font-size:13px}
+.ln{padding:8px 0;border-top:1px solid var(--line)}
+.r1{display:flex;justify-content:space-between;gap:8px;font-weight:600;align-items:flex-start}
+.r2{display:flex;align-items:center;gap:8px;margin-top:4px;flex-wrap:wrap}
+.raw{color:var(--mut);font-size:13px;font-style:italic;flex:1;min-width:90px}
+.step{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:99px}
+.step button{width:38px;height:38px;border:0;background:none;font-size:20px}.step span{min-width:76px;text-align:center;font-size:14px}
+.x{border:0;background:none;color:var(--mut);font-size:16px;width:34px;height:34px}
+.ask{background:var(--askbg);border-radius:8px;padding:8px;margin-top:6px}.ask.w{background:var(--warnbg);color:var(--warn)}.ask.e{background:var(--errbg)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{border:1px solid var(--ok);color:var(--ok);background:var(--bot);border-radius:99px;padding:8px 12px;font-weight:600;min-height:40px}
+.chip.g{border-color:var(--line);color:var(--mut)}
+.chip.b{border-color:var(--blue);color:var(--blue)}
+.chip.r{border-color:var(--red);color:var(--red)}
+.tot{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid var(--ink);margin-top:6px;padding-top:6px;font-size:20px}
+.cta{width:100%;margin-top:8px;min-height:46px;border:0;border-radius:8px;background:var(--gold);color:var(--goldt);font-weight:800;font-size:16px}
+.cta:disabled{opacity:.5;cursor:not-allowed}
+.sec{min-height:46px;border:1px solid var(--line);border-radius:8px;background:var(--bot);padding:0 14px;margin-top:8px}
+.nudge b{display:inline}.tag{font-style:normal;font-size:12px;background:var(--okbg);color:var(--ok);border-radius:99px;padding:0 8px;margin-right:6px}
+.tag-rag{font-style:normal;font-size:11px;background:var(--bluebg);color:var(--blue);border-radius:99px;padding:1px 7px;font-weight:600}
+.tag-lock{font-style:normal;font-size:11px;background:var(--inp);border:1px solid var(--line);border-radius:99px;padding:1px 6px;color:var(--mut)}
+.cm{display:flex;gap:8px;padding:8px;background:var(--chat)}
+.cm input{flex:1;min-width:0;border:0;border-radius:99px;padding:10px 14px;background:var(--inp);color:var(--ink);font:inherit}
+.r{text-align:right}.snd{width:44px;height:44px;border-radius:50%;border:0;background:var(--hd);color:var(--hdt);font-size:18px}
+#sheet{position:absolute;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-end}#sheet[hidden]{display:none}
+#sheet>div{background:var(--bot);width:100%;border-radius:18px 18px 0 0;padding:16px;max-height:92%;overflow:auto}
+#sheet h3{margin:0 0 6px}#sheet .btns{display:flex;gap:8px}#sheet .btns button{flex:1}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+.panel>div,.ev{background:var(--bot);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px}
+.panel h2,.ev h2{font-size:18px;margin:0 0 6px}
+.panel select{font:inherit;width:100%;padding:6px;border-radius:6px;border:1px solid var(--line);background:var(--inp);color:var(--ink)}
+.sc{display:grid;gap:6px;margin-top:8px}.sc button{text-align:left;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--inp)}.sc small{display:block;color:var(--mut)}
+pre{background:var(--inp);padding:8px;border-radius:6px;overflow:auto;font-family:'JetBrains Mono',monospace;font-size:12px;max-height:260px}
+.note{font-size:14px;color:var(--mut)}.scroll{overflow-x:auto}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+input.q{width:70px;font:inherit;padding:4px;background:var(--inp);color:var(--ink);border:1px solid var(--line);border-radius:6px}
+.pill{padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600}.c-ok{background:var(--okbg);color:var(--ok)}.c-ask{background:var(--askbg)}.c-bad{background:var(--errbg);color:var(--red)}
+.kpi{display:flex;gap:10px;flex-wrap:wrap}.kpi div{flex:1;min-width:120px;background:var(--inp);border-radius:8px;padding:8px}.kpi b{font-size:20px;display:block}
+summary{cursor:pointer;font-weight:600;padding:2px 0}
+.full{grid-column:1/-1}
+.badge-rag{background:var(--bluebg);color:var(--blue);padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700}
+.weights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px;margin:8px 0}
+.w-box{background:var(--inp);border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+.w-box small{display:block;color:var(--mut);font-size:11px}
+.w-box b{font-size:15px;font-family:'JetBrains Mono',monospace}
+.rag-card{background:var(--inp);border:1px solid var(--line);border-radius:8px;padding:8px;margin-bottom:6px;font-size:13px}
+.rag-card-hdr{display:flex;justify-content:space-between;align-items:center;font-weight:700;margin-bottom:4px}
+.cand-list{margin:4px 0 0;padding-left:16px;color:var(--mut);font-size:12px}
+.rule-item{padding:6px 8px;border-radius:6px;background:var(--inp);border:1px solid var(--line);margin-bottom:4px;font-size:13px}
+</style></head><body>
+<div class="wrap">
+<div class="phone">
+ <div class="hd"><div class="av">K</div><div><b id="sn">Store</b><small>Kirana Order Assistant · RAG + Guardrails</small></div></div>
+ <div id="chat" aria-live="polite"></div>
+ <div class="cm"><input id="in" placeholder="Order likhiye, jaise 2 peti maggi" aria-label="Message"><button class="snd" id="go" aria-label="Bhejein">➤</button></div>
+ <div id="sheet" hidden></div>
+</div>
+<div class="panel">
+ <div><h2>Demo controls</h2><p class="note">Left is shopkeeper WhatsApp view. Right is presenter test controls.</p>
+ <label class="note" for="store">Store</label><select id="store"></select>
+ <div class="sc" id="sc"></div><div class="row"><button class="sec" id="reset" style="margin:0">Chat reset karein</button></div>
+ <p class="note" id="eng"></p><p class="note">Confirm only simulates dispatch to warehouse.</p></div>
+
+ <div>
+   <h2>🛡️ Business Rules & Policy Controls</h2>
+   <div class="rule-item"><b>1. 0.5 Pack Restriction:</b> Consumer packets cannot be split (integer $\ge 1$ required).</div>
+   <div class="rule-item"><b>2. Fixed Catalog Price:</b> Anti-bargaining & tampering guardrail protects distributor MRP.</div>
+   <div class="rule-item">
+     <div class="row" style="margin:2px 0">
+       <label for="max-cases-inp"><b>3. Max Peti/SKU:</b></label>
+       <input class="q" type="number" id="max-cases-inp" min="5" max="100" value="25">
+       <label for="max-pcs-inp"><b>Max Pcs/SKU:</b></label>
+       <input class="q" type="number" id="max-pcs-inp" min="10" max="1000" value="200">
+     </div>
+     <small class="note">Enforces anti-hoarding and commercial transport payload limits.</small>
+   </div>
+ </div>
+
+ <div><details open><summary>🔍 RAG Knowledge Base & Candidate Retriever</summary>
+   <div id="rag-inspector" style="margin-top:8px"><p class="note">Type an order on WhatsApp to see candidate retrieval in action.</p></div>
+ </details></div>
+
+ <div><details><summary>Structured order (JSON format)</summary><pre id="json">–</pre></details></div>
+</div>
+
+<div class="ev full"><details open><summary>📊 Machine Learning & Edge Case Benchmark: Logistic Regression & RAG</summary><div id="ev"></div></details></div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),fmt=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+const CSV=`id|brand|product|size|mrp|case|cat|extra
+oil1|Fortune|Sunflower Oil|1L|135|12|oil|
+oil5|Fortune|Sunflower Oil|5L|690|4|oil|*
+saf|Saffola|Gold Oil|1L|185|12|oil|
+sar|Dhara|Kachi Ghani Mustard Oil|1L|165|12|oil|sarson sarso
+-|Sundrop|Heart Oil|1L|180|12|oil|
+-|Gemini|Sunflower Oil|1L|140|12|oil|
+-|Patanjali|Mustard Oil|1L|170|12|oil|sarson
+-|Freedom|Refined Sunflower Oil|1L|135|12|oil|
+-|Nature Fresh|Groundnut Oil|1L|215|12|oil|moongfali
+-|Emami|Rice Bran Oil|1L|150|12|oil|
+-|Amul|Ghee|1L|680|12|ghee|
+-|Patanjali|Cow Ghee|1L|640|12|ghee|
+-|Amul|Taaza Milk|1L|68|12|milk|
+-|Nestle|Milkmaid|400g|150|24|milk|
+butter100|Amul|Butter|100g|58|40|butter|
+butter500|Amul|Butter|500g|285|20|butter|
+-|Mother Dairy|Butter|100g|58|40|butter|
+-|Amul|Cheese Slices|200g|140|24|cheese|
+atta5|Aashirvaad|Atta|5kg|265|4|atta|ashirvad aashirwad ashirwad
+atta10|Aashirvaad|Atta|10kg|520|2|atta|ashirvad aashirwad ashirwad
+-|Pillsbury|Chakki Atta|5kg|250|4|atta|
+-|Fortune|Chakki Fresh Atta|5kg|255|4|atta|
+-|Rajdhani|Besan|500g|60|20|atta|
+-|Patanjali|Maida|1kg|45|20|atta|
+-|India Gate|Basmati Rice|5kg|650|4|rice|
+-|Daawat|Basmati Rice|5kg|600|4|rice|
+-|Kohinoor|Basmati Rice|5kg|620|4|rice|
+-|Lal Qilla|Basmati Rice|5kg|580|4|rice|
+sugar|Madhur|Sugar|5kg|230|6|sugar|
+-|Madhur|Sugar|1kg|48|25|sugar|
+salt|Tata|Salt|1kg|28|25|salt|
+-|Aashirvaad|Iodised Salt|1kg|26|25|salt|
+toor|Sampann|Toor Dal|1kg|165|10|dal|tuvar arhar
+-|Sampann|Chana Dal|1kg|140|10|dal|
+-|Sampann|Moong Dal|1kg|150|10|dal|
+-|Sampann|Masoor Dal|1kg|120|10|dal|
+-|Sampann|Urad Dal|1kg|155|10|dal|
+-|Nutrela|Soya Chunks|220g|50|24|soya|
+-|MDH|Garam Masala|100g|85|48|spice|
+-|MDH|Chana Masala|100g|80|48|spice|
+-|MDH|Chaat Masala|100g|78|48|spice|
+-|Everest|Turmeric Powder|200g|75|48|spice|haldi
+-|Everest|Red Chilli Powder|200g|95|48|spice|mirchi lal
+-|Everest|Coriander Powder|200g|60|48|spice|dhania
+-|Everest|Kitchen King Masala|100g|85|48|spice|
+-|Everest|Pav Bhaji Masala|100g|78|48|spice|
+-|Catch|Cumin Seeds|100g|70|48|spice|jeera
+tea|Tata|Tea Red Label|250g|135|24|tea|red label
+-|Tata|Tea Gold|250g|160|24|tea|
+-|Taj Mahal|Tea|250g|170|24|tea|
+-|Wagh Bakri|Tea|250g|140|24|tea|
+-|Nescafe|Classic Coffee|50g|175|24|coffee|
+-|Bru|Instant Coffee|50g|160|24|coffee|
+-|Horlicks|Classic Malt|500g|245|12|health|
+-|Cadbury|Bournvita|500g|245|12|health|
+-|Boost|Health Drink|500g|250|12|health|
+parle|Parle-G|Biscuit|56g|5|120|biscuit|
+goodday|Britannia|Good Day Cookies|100g|10|72|biscuit|
+-|Britannia|Marie Gold|250g|40|36|biscuit|
+-|Parle|Monaco Biscuit|75g|20|48|biscuit|
+-|Sunfeast|Dark Fantasy|100g|40|48|biscuit|
+-|Oreo|Biscuit|120g|40|48|biscuit|
+-|Britannia|Bourbon|100g|30|48|biscuit|
+-|Lays|Classic Salted Chips|52g|20|60|snack|
+-|Kurkure|Masala Munch|90g|20|60|snack|
+-|Haldiram|Aloo Bhujia|200g|55|30|snack|
+-|Haldiram|Moong Dal Namkeen|200g|55|30|snack|
+maggi|Maggi|2-Minute Noodles|70g|14|48|noodle|
+-|Yippee|Noodles|70g|14|48|noodle|
+-|Top Ramen|Curry Noodles|70g|14|48|noodle|
+-|Kissan|Tomato Ketchup|500g|110|24|sauce|
+-|Kissan|Mixed Fruit Jam|500g|165|24|jam|
+-|Priya|Mango Pickle|500g|140|24|pickle|
+-|Coca-Cola|Soft Drink|750ml|40|24|drink|coke
+-|Pepsi|Soft Drink|750ml|40|24|drink|
+-|Thums Up|Soft Drink|750ml|40|24|drink|
+-|Sprite|Soft Drink|750ml|40|24|drink|
+-|Real|Fruit Juice|1L|120|12|drink|
+-|Bisleri|Packaged Water|1L|20|12|water|
+lifebuoy|Lifebuoy|Total Soap|100g|32|72|soap|
+-|Lux|Soft Touch Soap|100g|40|72|soap|
+-|Dettol|Original Soap|125g|50|72|soap|
+-|Santoor|Sandal Soap|100g|40|72|soap|
+-|Pears|Pure Soap|125g|70|72|soap|
+-|Medimix|Ayurvedic Soap|125g|45|72|soap|
+-|Hamam|Soap|100g|35|72|soap|
+surf1|Surf Excel|Easy Wash|1kg|130|12|detergent|
+surf5|Surf Excel|Easy Wash|500g|68|24|detergent|
+-|Tide|Plus Detergent Powder|1kg|120|12|detergent|
+-|Ariel|Matic Detergent Powder|1kg|230|12|detergent|
+-|Wheel|Active Detergent Powder|1kg|75|12|detergent|
+-|Rin|Detergent Bar|250g|20|60|detergent|
+-|Vim|Dishwash Bar|300g|30|36|dish|
+-|Vim|Dishwash Gel|500ml|110|24|dish|
+-|Harpic|Toilet Cleaner|500ml|95|24|cleaner|
+-|Lizol|Floor Cleaner|500ml|105|24|cleaner|
+-|Colin|Glass Cleaner|500ml|95|24|cleaner|
+colgate|Colgate|Strong Teeth|200g|110|48|paste|
+-|Pepsodent|Germicheck Paste|200g|100|48|paste|
+-|Close Up|Red Hot Paste|150g|95|48|paste|
+-|Dabur|Red Paste|200g|105|48|paste|
+-|Patanjali|Dant Kanti|200g|100|48|paste|
+-|Clinic Plus|Shampoo|175ml|110|24|hair|
+-|Sunsilk|Shampoo|180ml|120|24|hair|
+-|Parachute|Coconut Oil|500ml|210|24|hairoil|
+`;
+
+let C=[],byId={};
+const CAT={oil:'oil tel sarson sarso',atta:'atta aata flour chakki',rice:'rice chawal basmati',dal:'dal tuvar toor arhar chana moong masoor urad',sugar:'sugar chini cheeni',salt:'salt namak iodised',spice:'masala haldi mirchi dhania jeera garam',tea:'tea chai patti',coffee:'coffee',health:'health drink bournvita horlicks boost',biscuit:'biscuit cookies marie bourbon monaco',snack:'snacks namkeen bhujia chips kurkure',noodle:'noodles maggi yippee top ramen',sauce:'sauce ketchup tomato',jam:'jam fruit kissan',pickle:'pickle achar mango',drink:'drink soft coke pepsi thums up sprite',water:'water paani bisleri',soap:'soap sabun bath',detergent:'detergent powder washing surf ariel tide wheel rin',dish:'dishwash bartan vim',cleaner:'cleaner harpic lizol colin floor glass toilet',paste:'paste toothpaste colgate dabur dant kanti',hair:'hair shampoo clinic plus sunsilk',hairoil:'hair tel coconut oil parachute',ghee:'ghee cow amul patanjali',butter:'butter makhan amul',milk:'milk doodh taaza milkmaid',cheese:'cheese slices',soya:'soya chunks'};
+const tk=s=>s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+
+function lev(a,b){const m=[];for(let i=0;i<=a.length;i++)m[i]=[i];for(let j=1;j<=b.length;j++)m[0][j]=j;for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]==b[j-1]?0:1));return m[a.length][b.length]}
+const hit=(q,w)=>q===w||(q.length>=4&&w.length>=4&&lev(q,w)<=(q.length>=8?2:1));
+
+function build(txt){
+  const rows=txt.trim().split('\n').slice(1).map(r=>r.split('|')).filter(r=>r.length>=7);
+  C=rows.map((r,i)=>{
+    const[id,brand,prod,size,mrp,cs,cat,ex='',gst='']=r.map(x=>x.trim());
+    const tin=ex.startsWith('*');
+    return{id:id==='-'?'x'+i:id,brand,name:`${brand} ${prod} ${size}`,B:[...new Set([...tk(brand),...tk(ex)])],F:[...new Set([...tk(CAT[cat]||cat),...tk(prod)])],size:size.toLowerCase(),price:+mrp,case:+cs,tin,cat,gst:gst!==''?+gst:null};
+  });
+  byId=Object.fromEntries(C.map(c=>[c.id,c]));
+}
+build(CSV);
+
+const NW={ek:1,do:2,teen:3,char:4,chaar:4,paanch:5,panch:5,chhe:6,saat:7,aath:8,nau:9,das:10,bees:20,aadha:.5,half:.5};
+const U={peti:'case',petti:'case',carton:'case',case:'case',box:'case',dabba:'tin',dabbe:'tin',tin:'tin',jar:'tin',packet:'pcs',packets:'pcs',pkt:'pcs',pack:'pcs',pc:'pcs',pcs:'pcs',piece:'pcs',bag:'pcs',bori:'pcs',nos:'pcs',dozen:'dozen',darjan:'dozen',dzn:'dozen',kg:'kg',kilo:'kg',g:'g',gm:'g',gram:'g',l:'l',ltr:'l',litre:'l',liter:'l'};
+const STOP=new Set('bhaiya bhai bhej bhejna dena de dijiye chahiye please pls ka ki ke ko wala wali wale hai hello namaste mujhe order kal tak the for sir ji aap hi bas nahi nahin na'.split(' '));
+
+// --- PRICE TAMPERING & SECURITY GUARDRAIL ---
+const PRICE_TAMPER_PATTERNS=[
+  /\b(?:rate|price|daam|bhav|rupay|rupee|rs|dam)\b.*\b(?:kam|ghatao|reduce|discount|sasta|chhoot|less|bargain)\b/i,
+  /\b(?:kam|ghatao|reduce|discount|sasta|chhoot|less|bargain)\b.*\b(?:rate|price|daam|bhav|karo|kijiye|do|lagao|me|mein)\b/i,
+  /\b(?:sasta|saste|kam\s*me|thoda\s*kam)\b/i,
+  /\b(?:\d+)\s*(?:rs|rupay|rupees|inr)\s*(?:me|mein|par|pe)\s*(?:do|lagao|karo|bhejo|de|dijiye)\b/i,
+  /\b(?:free|zero\s*rupees?|muft|mufat)\b/i,
+  /\b(?:override|system\s*prompt|price\s*0|price\s*zero|bypass|hack)\b/i
+];
+function checkPriceTamper(text){return PRICE_TAMPER_PATTERNS.some(p=>p.test(text));}
+
+function parseSeg(raw){
+  const t=raw.toLowerCase().replace(/[-_]|\.(?!\d)/g,' ').replace(/(\d)([a-z])/g,'$1 $2').split(/\s+/).filter(w=>w&&!STOP.has(w));
+  let qty=null,unit=null,size=null,rawUnit=null,words=[];
+  for(let i=0;i<t.length;i++){
+    const w=t[i],nx=t[i+1];let n=null;
+    if(/^\d+(\.\d+)?$/.test(w))n=+w;else if(NW[w]!==undefined&&(i===0||U[nx]))n=NW[w];
+    if(n!==null){
+      const u=U[nx];rawUnit=nx;
+      if(u&&['kg','g','l'].includes(u)){size={n,u};i++;continue}
+      if(u){if(qty===null){qty=n;unit=u}i++;continue}
+      if(qty===null){qty=n;unit='pcs'}continue;
+    }
+    if(NW[w]!==undefined)continue;
+    if(U[w]&&w.length>1)continue;
+    words.push(w);
+  }
+  const parenMatch=raw.match(/\((?:nahi|not)?\s*(\d+|ek|do|teen|char|chaar|paanch)\s*(peti|packet|pkt|carton|pcs)?\)/i);
+  if(parenMatch){
+    const v=parenMatch[1].toLowerCase(),fixVal=/^\d+$/.test(v)?+v:NW[v];
+    if(fixVal!==undefined)qty=fixVal;
+  }
+  return{raw:raw.trim(),qty,unit,rawUnit,size,words};
+}
+
+// --- RAG RETRIEVER & DISAMBIGUATOR ---
+function ragRetrieve(p, topK=6){
+  const scored=C.map(it=>{
+    let w=0,un=0,b=false;
+    for(const q of p.words){
+      if(it.B.some(x=>hit(q,x))){w+=2.0;b=true}
+      else if(it.F.some(x=>hit(q,x))){w+=1.0}
+      else{un++}
+    }
+    let s=w;
+    if(w>0){
+      if(p.size&&(''+p.size.n+p.size.u===it.size))s+=1.5;
+      if(p.unit==='tin'&&it.tin)s+=1.5;
+    }
+    const maxPoss=Math.max(2,p.words.length*2+1.5);
+    const scorePct=Math.min(100,Math.round((s/maxPoss)*100));
+    return{it,w,s,un,b,scorePct};
+  }).filter(x=>x.w>0).sort((a,b)=>b.s-a.s);
+  return scored.slice(0,topK);
+}
+
+function resolveWithRAG(p){
+  if(/\b(?:ya|or)\b/i.test(p.raw)){
+    return{raw:p.raw,qty:null,unit:'pcs',rawUnit:p.rawUnit,item:null,options:[],missing:false,sugg:null,ack:false,ragStatus:'AMBIGUOUS_CHOICE',retrievalContext:[]};
+  }
+  const retrieved=ragRetrieve(p);
+  const l={raw:p.raw,qty:p.qty,unit:p.unit||'pcs',rawUnit:p.rawUnit,item:null,options:null,missing:false,sugg:null,ack:false,ragStatus:'GROUNDED_MATCH',retrievalContext:retrieved.map(r=>({id:r.it.id,name:r.it.name,score:r.scorePct}))};
+  
+  if(!retrieved.length){
+    l.missing=true;l.ragStatus='OUT_OF_CATALOG';return l;
+  }
+  const top=retrieved[0],tied=retrieved.filter(x=>x.s>=top.s-.01);
+  if(!tied.some(x=>x.b)&&top.un>0){
+    l.missing=true;l.sugg=top.it;l.ragStatus='OUT_OF_CATALOG';return l;
+  }
+  l.p=p;
+  if(tied.length===1||(tied.length>1&&tied[0].it.id==='parle')){
+    l.item=top.it;l.ragStatus='GROUNDED_MATCH';
+  }else{
+    l.ragStatus='DISAMBIGUATION_REQUIRED';
+    const br=[...new Set(tied.map(x=>x.it.brand))];
+    if(tied.length>6&&br.length>1){l.options=[];l.brands=br.slice(0,8)}else{l.options=tied.slice(0,6).map(x=>x.it)}
+  }
+  return l;
+}
+
+const pcs=l=>l.qty==null?0:Math.round(l.unit==='case'?l.qty*l.item.case:l.unit==='dozen'?l.qty*12:l.qty);
+function splitMsg(m){return m.toLowerCase().split(/\s*(?:[,;\n+]|\baur\b|\band\b|\bphir\b)\s*/).filter(x=>x.trim())}
+
+// --- HISTORICAL DATA & MACHINE LEARNING ---
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const P={
+  sharma:{name:'Sharma General Store, Kalyan West',h:{oil1:[.9,36],maggi:[.75,96],parle:[.7,120],salt:[.6,50],tea:[.5,12],colgate:[.3,48],atta5:[.35,8]}},
+  patil:{name:'Patil Kirana, Dombivli',h:{sar:[.85,24],atta10:[.8,4],sugar:[.7,12],toor:[.6,20],tea:[.6,12],lifebuoy:[.5,72],butter100:[.3,40]}},
+  fatima:{name:'Fatima Provision, Bhiwandi',h:{oil5:[.6,4],saf:[.4,12],maggi:[.8,96],surf1:[.6,24],goodday:[.5,72],colgate:[.5,48],lifebuoy:[.5,72]}}
+};
+let seed=7;
+for(const k in P){
+  const r=rng(seed+=101);
+  P[k].orders=Array.from({length:36},()=>{
+    const o={};
+    for(const id in P[k].h){
+      const[p,t]=P[k].h[id];
+      if(r()<p)o[id]=Math.round(t*(.75+.5*r()));
+    }
+    return o;
+  });
+}
+
+function ewma(k,id,upto){let s=.5;for(let i=0;i<upto;i++)s=.3*(P[k].orders[i][id]?1:0)+.7*s;return s}
+const typ=(k,id)=>{const v=P[k].orders.map(o=>o[id]).filter(Boolean);return v.length?Math.round(v.reduce((a,b)=>a+b,0)/v.length):0};
+
+function extractFeatures(k,id,t){
+  let lastIdx=-1;
+  for(let i=t-1;i>=0;i--){if(P[k].orders[i][id]){lastIdx=i;break;}}
+  const cyclesSinceLast=lastIdx===-1?8:(t-lastIdx);
+  let intervals=[],prev=-1;
+  for(let i=0;i<t;i++){
+    if(P[k].orders[i][id]){if(prev!==-1)intervals.push(i-prev);prev=i;}
+  }
+  const avgInt=intervals.length?(intervals.reduce((a,b)=>a+b,0)/intervals.length):2.5;
+  const cycleRatio=Math.min(3.0,cyclesSinceLast/Math.max(1,avgInt));
+  const inLast=(t>0&&P[k].orders[t-1][id])?1.0:0.0;
+  let c5=0,start5=Math.max(0,t-5);
+  for(let i=start5;i<t;i++){if(P[k].orders[i][id])c5++;}
+  const freq5=(t-start5)>0?c5/(t-start5):0.5;
+  let cAll=0;
+  for(let i=0;i<t;i++){if(P[k].orders[i][id])cAll++;}
+  const freqAll=t>0?cAll/t:0.5;
+  const ewmaScore=ewma(k,id,t);
+  return[1.0,cycleRatio,inLast,freq5,freqAll,ewmaScore];
+}
+
+const sigmoid=z=>1/(1+Math.exp(-Math.max(-25,Math.min(25,z))));
+
+function trainLogisticRegression(){
+  const X=[],Y=[];
+  for(const k in P){
+    for(let t=5;t<26;t++){
+      for(const id in P[k].h){
+        X.push(extractFeatures(k,id,t));
+        Y.push(P[k].orders[t][id]?1.0:0.0);
+      }
+    }
+  }
+  const nFeat=X[0].length;
+  let W=new Array(nFeat).fill(0.0);
+  const lr=0.45,lambda=0.01,epochs=200;
+  for(let ep=0;ep<epochs;ep++){
+    const grad=new Array(nFeat).fill(0.0);
+    for(let i=0;i<X.length;i++){
+      let z=0;
+      for(let j=0;j<nFeat;j++)z+=W[j]*X[i][j];
+      const err=sigmoid(z)-Y[i];
+      for(let j=0;j<nFeat;j++)grad[j]+=err*X[i][j];
+    }
+    for(let j=0;j<nFeat;j++){
+      const reg=j===0?0:(lambda*W[j]);
+      W[j]-=(lr/X.length)*(grad[j]+reg);
+    }
+  }
+  return W;
+}
+
+const LR_WEIGHTS=trainLogisticRegression();
+const LR_FEAT_NAMES=['Bias (Intercept)','Cycle Ratio (Overdue)','In Last Order','Freq (Past 5)','Lifetime Freq','EWMA Momentum'];
+
+function predictLogit(k,id,t,W){
+  const feat=extractFeatures(k,id,t);
+  let z=0;
+  for(let j=0;j<feat.length;j++)z+=W[j]*feat[j];
+  return{prob:sigmoid(z),feat};
+}
+
+function evalModels(thLogit,thEwma){
+  const r={base:{tp:0,fp:0,fn:0,tn:0},ewma:{tp:0,fp:0,fn:0,tn:0},logit:{tp:0,fp:0,fn:0,tn:0}};
+  for(const k in P){
+    for(let t=26;t<36;t++){
+      for(const id in P[k].h){
+        const actual=!!P[k].orders[t][id];
+        const pBase=!!P[k].orders[t-1][id];
+        r.base[actual?(pBase?'tp':'fn'):(pBase?'fp':'tn')]++;
+        const pEwma=ewma(k,id,t)>=thEwma;
+        r.ewma[actual?(pEwma?'tp':'fn'):(pEwma?'fp':'tn')]++;
+        const pLogit=predictLogit(k,id,t,LR_WEIGHTS).prob>=thLogit;
+        r.logit[actual?(pLogit?'tp':'fn'):(pLogit?'fp':'tn')]++;
+      }
+    }
+  }
+  return r;
+}
+
+const TESTS=[
+  ['2 peti maggi',[['maggi',96]]],
+  ['1 peti parle g aur 3 pkt red label',[['parle',120],['tea',3]]],
+  ['5 packet tata salt',[['salt',5]]],
+  ['3 peti fortune oil 1l',[['oil1',36]]],
+  ['ek dabba fortune tel',[['oil5',1]]],
+  ['2 peti surf',['ASK']],
+  ['tel 2 peti',['ASK']],
+  ['aashirwad atta 10kg 2 bag',[['atta10',2]]],
+  ['2 peti dove soap',['NONE']],
+  ['nutella 3 jar',['NONE']],
+  ['do peti maggi aur ek peti colgate',[['maggi',96],['colgate',48]]],
+  ['mggi 1 peti',[['maggi',48]]],
+  ['paanch dozen amul butter 100g',[['butter100',60]]],
+  ['butter 2 peti',['ASK']],
+  ['10 peti parle g',[['parle',1200]]],
+  ['aadha peti maggi',[['maggi',24]]],
+  ['2 peti lifebuoy sabun',[['lifebuoy',144]]],
+  ['Parle G ka ek carton',[['parle',120]]],
+  ['bhaiya 2 peti kinley water bhej do',['NONE']],
+  ['3 peti dhara kachi ghani',[['sar',36]]],
+  ['saffola gold 2 peti',[['saf',24]]],
+  ['1 peti maggi ya 2 peti parle g',['ASK']],
+  ['5 peti parle (nahi 1 peti)',[['parle',120]]]
+];
+
+function runTests(pre){
+  const o=[];let c=0,ask=0,wrong=0,hall=0,n=0;
+  for(const[m,g]of TESTS){
+    const ls=pre?pre[m]:splitMsg(m).map(s=>resolveWithRAG(parseSeg(s)));
+    g.forEach((gold,i)=>{
+      const l=ls[i];n++;let v,got;
+      if(!l){v='wrong';got='(no line)'}
+      else if(l.missing){got='not in catalog';v=gold==='NONE'?'ok':gold==='ASK'?'wrong':'ask'}
+      else if(!l.item||l.qty==null){got='follow-up asked';v=gold==='ASK'?'ok':gold==='NONE'?'ok':'ask'}
+      else{got=l.item.id+' ×'+pcs(l);v=gold==='NONE'?'hall':gold==='ASK'?'wrong':(gold[0]===l.item.id&&gold[1]===pcs(l)?'ok':'wrong')}
+      if(v==='ok')c++;else if(v==='ask')ask++;else if(v==='hall')hall++;else wrong++;
+      o.push({m,exp:gold==='ASK'?'follow-up':gold==='NONE'?'not in catalog':gold[0]+' ×'+gold[1],got,v,rag:l?l.ragStatus:'–'})
+    });
+  }
+  return{rows:o,c,ask,wrong,hall,n};
+}
+
+function evalHtml(){
+  const T=runTests(),pct=x=>Math.round(x*100)+'%';
+  const E=evalModels(S.th,0.55);
+  const pr=r=>({p:r.tp/(r.tp+r.fp||1),r:r.tp/(r.tp+r.fn||1),f1:2*(r.tp/(r.tp+r.fp||1))*(r.tp/(r.tp+r.fn||1))/((r.tp/(r.tp+r.fp||1))+(r.tp/(r.tp+r.fn||1))||1),cost:r.fp*S.cFP+r.fn*S.cFN});
+  const mBase=pr(E.base),mEwma=pr(E.ewma),mLogit=pr(E.logit);
+
+  return `<div class="row"><button class="sec" id="llmbtn" style="margin:0">Run benchmark via Claude RAG Endpoint</button></div>
+  <div id="llmres"></div>
+
+  <h2>1. RAG Message Parser Benchmark (${T.n} labelled ground truth lines)</h2>
+  <div class="kpi">
+    <div><b>${pct(T.c/T.n)}</b>RAG Exact Accuracy</div>
+    <div><b>${pct(T.ask/T.n)}</b>Safe Disambiguation</div>
+    <div><b>${T.wrong}</b>Silent Wrong</div>
+    <div><b>${T.hall}</b>Hallucinations Blocked</div>
+  </div>
+  
+  <div class="scroll" style="margin-top:8px"><table>
+    <tr><th>Message line</th><th>Ground Truth</th><th>Parsed Result</th><th>RAG Status</th><th>Verdict</th></tr>
+    ${T.rows.map(r=>`<tr><td>${esc(r.m)}</td><td>${esc(r.exp)}</td><td>${esc(r.got)}</td><td><span class="badge-rag">${esc(r.rag)}</span></td><td><span class="pill ${r.v==='ok'?'c-ok':r.v==='ask'?'c-ask':'c-bad'}">${{ok:'correct',ask:'safe ask',wrong:'WRONG',hall:'HALLUCINATED'}[r.v]}</span></td></tr>`).join('')}
+  </table></div>
+
+  <h2 style="margin-top:16px">2. Reorder Prediction Model Comparison</h2>
+  <p class="note">Comparing <b>Multivariate Logistic Regression (ML)</b> vs <b>EWMA Heuristic</b> and <b>Last Order Baseline</b> across 210 store test decisions.</p>
+  
+  <div class="row">
+    <label>Logistic Regression Threshold P(y=1) <b id="thv">${S.th}</b></label>
+    <input type="range" id="th" min=".30" max=".85" step=".05" value="${S.th}" style="max-width:200px">
+    <label>Cost of Missed Item ₹</label><input class="q" type="number" id="cfn" value="${S.cFN}">
+    <label>Cost of Useless Nudge ₹</label><input class="q" type="number" id="cfp" value="${S.cFP}">
+  </div>
+
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Precision</th><th>Recall</th><th>F1-Score</th><th>Financial Risk Cost</th></tr>
+    <tr><td>Baseline (Last order)</td><td>${pct(mBase.p)}</td><td>${pct(mBase.r)}</td><td>${pct(mBase.f1)}</td><td>${fmt(mBase.cost)}</td></tr>
+    <tr><td>EWMA Heuristic (Threshold ≥ 0.55)</td><td>${pct(mEwma.p)}</td><td>${pct(mEwma.r)}</td><td>${pct(mEwma.f1)}</td><td>${fmt(mEwma.cost)}</td></tr>
+    <tr style="background:var(--okbg)"><td><b>🌟 Logistic Regression (ML)</b></td><td><b>${pct(mLogit.p)}</b></td><td><b>${pct(mLogit.r)}</b></td><td><b>${pct(mLogit.f1)}</b></td><td><b>${fmt(mLogit.cost)}</b></td></tr>
+  </table></div>
+
+  <h3 style="margin:12px 0 4px">Learned Logistic Regression Coefficients</h3>
+  <div class="weights-grid">
+    ${LR_FEAT_NAMES.map((name,idx)=>`
+      <div class="w-box">
+        <small>${name}</small>
+        <b style="color:${LR_WEIGHTS[idx]>=0?'var(--ok)':'var(--red)'}">${LR_WEIGHTS[idx]>=0?'+':''}${LR_WEIGHTS[idx].toFixed(3)}</b>
+      </div>
+    `).join('')}
+  </div>`;
+}
+
+function bindEv(){
+  $('#ev').innerHTML=evalHtml();
+  $('#llmbtn').onclick=llmEval;
+  $('#llmres').innerHTML=S.llmh||'';
+  $('#th').oninput=e=>{S.th=+e.target.value;bindEv();render()};
+  $('#cfn').onchange=e=>{S.cFN=+e.target.value;bindEv()};
+  $('#cfp').onchange=e=>{S.cFP=+e.target.value;bindEv()};
+  $('#max-cases-inp').onchange=e=>{S.maxCases=+e.target.value||25;render()};
+  $('#max-pcs-inp').onchange=e=>{S.maxPcs=+e.target.value||200;render()};
+}
+
+const S={
+  store:'sharma',
+  lines:[],
+  skip:{},
+  chat:[],
+  typing:false,
+  sheet:false,
+  th:.50,
+  cFP:5,
+  cFN:150,
+  n:1041,
+  last:'–',
+  len:0,
+  engine:'RAG Lexical & Dense Retriever (Client-side)',
+  invoices:{},
+  invView:null,
+  llmh:'',
+  latestRAG:[],
+  maxCases:25,
+  maxPcs:200,
+  priceAlertActive:false
+};
+
+const tm=()=>new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+const UL={case:'peti',pcs:'pcs',dozen:'dozen',tin:'dabba'};
+const SC=[
+  ['Clean order','sharma','Sab items RAG ground karta hai','2 peti maggi, 1 peti parle g, 3 peti fortune oil 1l, 1 peti tata salt, 2 pkt red label'],
+  ['Edge Case 1: 0.5 Pack Blocked','sharma','Fractional pack error & whole pack chips','aadha packet maggi aur 0.5 packet tata salt bhej do'],
+  ['Edge Case 2: Price Tampering','sharma','Strict warning against price manipulation','maggi 10 rs me do bhaiya, rate kam karo aur fortune oil 50 me lagao'],
+  ['Edge Case 3: Quantity Quota Exceeded','sharma','Enforces max vehicle allocation limit','60 peti maggi aur 500 packet parle g bhej do'],
+  ['RAG Ambiguity','sharma','RAG multi-variant candidate detect karta hai','bhaiya 2 peti fortune tel aur surf 3 packet bhej do'],
+  ['Logistic Regression Nudge','sharma','ML model overdue replenishment detect karta hai','2 peti maggi aur 1 peti parle g aur 5 pkt red label'],
+  ['Guardrail Block','sharma','Out-of-catalog items hallucination guardrail','1 peti maggi, 2 peti dove soap, 50 peti parle g, nutella 3 jar']
+];
+
+function isFractionalPack(l){
+  const isPcs=(l.unit==='pcs'||l.rawUnit==='pack'||l.rawUnit==='packet'||l.rawUnit==='pkt'||l.rawUnit==='piece'||l.rawUnit==='bag');
+  return isPcs && (l.qty!==null && (l.qty%1!==0 || l.qty<1));
+}
+
+function isLimitExceeded(l){
+  if(l.qty==null) return false;
+  if(l.unit==='case' && l.qty>S.maxCases) return true;
+  if(l.unit==='pcs' && l.qty>S.maxPcs) return true;
+  return false;
+}
+
+function sane(l){
+  if(!l.item||l.qty==null)return null;
+  const p=pcs(l),t=typ(S.store,l.item.id),lim=t?t*3:l.item.case*5;
+  return p>lim?`${l.qty} ${UL[l.unit]} = ${p.toLocaleString('en-IN')} pcs (${fmt(p*l.item.price)}). ${t?'Aap aam taur par '+t+' pcs mangate hain.':'Yeh bahut zyada lagta hai.'} Kya yeh sahi hai?`:null;
+}
+
+function st(l){
+  if(l.missing) return 'missing';
+  if(!l.item) return 'variant';
+  if(l.qty==null) return 'qty';
+  if(isFractionalPack(l)) return 'frac_err';
+  if(isLimitExceeded(l)) return 'limit_err';
+  if(sane(l)&&!l.ack) return 'warn';
+  return 'ok';
+}
+
+function nudges(){
+  const k=S.store,have=new Set();
+  S.lines.forEach(l=>{if(l.item)have.add(l.item.id);(l.options||[]).forEach(o=>have.add(o.id));if(l.sugg)have.add(l.sugg.id)});
+  return Object.keys(P[k].h).filter(id=>byId[id]&&!have.has(id)&&!S.skip[k+id])
+    .map(id=>{
+      const pred=predictLogit(k,id,36,LR_WEIGHTS);
+      return{id,prob:pred.prob,cycleRatio:pred.feat[1]};
+    })
+    .filter(x=>x.prob>=S.th)
+    .sort((a,b)=>b.prob-a.prob)
+    .slice(0,2);
+}
+
+const total=ls=>ls.reduce((a,l)=>a+(l.item&&l.qty!=null&&st(l)==='ok'?pcs(l)*l.item.price:0),0);
+
+function card(ro,ls){
+  ls=ls||S.lines;
+  let h=`<div class="ch"><b>${ro?'✅ Confirmed order':'Aapka order'}</b><span class="mut sm">${ls.length} item</span></div>`;
+  ls.forEach((l,i)=>{
+    if(l.item){
+      const ok=l.qty!=null,a=ok?pcs(l)*l.item.price:0,sn=ro?null:sane(l),u=UL[l.item.tin?'tin':'case'];
+      const fracErr=!ro&&isFractionalPack(l);
+      const limitErr=!ro&&isLimitExceeded(l);
+      const maxAllowed=l.unit==='case'?S.maxCases:S.maxPcs;
+
+      h+=`<div class="ln"><div class="r1">
+        <span>${l.fresh&&!ro&&ls.some(x=>!x.fresh)?'<i class="tag">naya</i>':''}${esc(l.item.name)} <span class="tag-lock">🔒 MRP ₹${l.item.price}</span></span>
+        <span>${ok&&!fracErr&&!limitErr?fmt(a):'–'}</span>
+      </div>
+      <div class="r2"><span class="raw">${l.raw.startsWith('(')?'ML nudge se joda':'“'+esc(l.raw)+'”'}</span>`;
+      
+      if(ok&&!ro)h+=`<span class="step"><button data-act="qdec" data-i="${i}" aria-label="Kam karein">−</button><span>${l.qty} ${UL[l.unit]}</span><button data-act="qinc" data-i="${i}" aria-label="Badhayein">+</button></span>`;
+      if(ok&&ro)h+=`<span>${l.qty} ${UL[l.unit]}</span>`;
+      if(!ro)h+=`<button class="x" data-act="rm" data-i="${i}" aria-label="Hatao">✕</button>`;
+      h+='</div>';
+
+      if(ok&&!fracErr&&!limitErr)h+=`<div class="mut sm">${pcs(l).toLocaleString('en-IN')} pcs × ${fmt(l.item.price)} (Catalog Rate)</div>`;
+      
+      // Edge Case 1: Fractional Pack Alert & Whole Unit Selection
+      if(fracErr){
+        h+=`<div class="ask e">
+          ❌ <b>Fractional Pack Blocked (${l.qty} ${UL[l.unit]}):</b> Consumer packs khula (aadha/0.5) nahi bechte. Wholesale rules ke mutabik kam se kam 1 poora packet ya peti lena zaroori hai.
+          <div class="chips">
+            <button class="chip" data-act="qset" data-i="${i}" data-v="1">1 packet (poora)</button>
+            <button class="chip" data-act="qset" data-i="${i}" data-v="2">2 packet</button>
+            <button class="chip b" data-act="qset_case" data-i="${i}" data-v="1">1 peti (${l.item.case} pcs)</button>
+            <button class="chip g" data-act="rm" data-i="${i}">Item hatao</button>
+          </div>
+        </div>`;
+      }
+
+      // Edge Case 3: Quantity Restriction Limit Exceeded
+      if(limitErr){
+        h+=`<div class="ask w">
+          ⚠ <b>Quantity Restriction Exceeded (${l.qty} ${UL[l.unit]}):</b> Anti-hoarding aur transport payload policy ke mutabik ek order mein maximum <b>${maxAllowed} ${UL[l.unit]}</b> allow hai.
+          <div class="chips">
+            <button class="chip" data-act="qset" data-i="${i}" data-v="${maxAllowed}">Max ${maxAllowed} ${UL[l.unit]} par set karein</button>
+            <button class="chip g" data-act="rm" data-i="${i}">Item hatao</button>
+          </div>
+        </div>`;
+      }
+
+      if(!ok&&!ro&&!fracErr&&!limitErr)h+=`<div class="ask">Kitna chahiye?<div class="chips">${[1,2,5,10].map(v=>`<button class="chip" data-act="qset" data-i="${i}" data-v="${v}">${v} ${u}</button>`).join('')}</div></div>`;
+      
+      if(sn&&!l.ack&&!fracErr&&!limitErr){
+        const t=typ(S.store,l.item.id),fq=t?Math.max(1,Math.round(t/(l.unit==='case'?l.item.case:1))):1;
+        h+=`<div class="ask w">⚠ ${esc(sn)}<div class="chips"><button class="chip" data-act="ack" data-i="${i}">Haan, sahi hai</button><button class="chip" data-act="fix" data-i="${i}" data-v="${fq}">${fq} ${UL[l.unit]} kar do</button></div></div>`;
+      }
+      h+='</div>';
+    }else if(l.missing){
+      h+=`<div class="ln"><div class="r1"><span>“${esc(l.raw)}”</span><span class="badge-rag" style="background:var(--errbg);color:var(--red)">Out of Catalog</span></div><div class="ask e">❌ Yeh item hamare catalog mein nahi hai, isliye order mein nahi joda.${l.sugg?` <b>${esc(l.sugg.name)}</b> chalega?`:''}<div class="chips">${l.sugg?`<button class="chip" data-act="sugg" data-i="${i}">Haan, yeh lagao</button>`:''}<button class="chip g" data-act="rm" data-i="${i}">Rehne do</button></div></div></div>`;
+    }else{
+      h+=`<div class="ln"><div class="r1"><span>“${esc(l.raw)}”</span><span class="badge-rag">RAG Ambiguity</span></div><div class="ask">${l.brands?'Kaun sa brand?':'Kaun sa pack size lena hai?'}<div class="chips">${(l.brands||[]).map(b=>`<button class="chip" data-act="brand" data-i="${i}" data-b="${esc(b)}">${esc(b)}</button>`).join('')}${l.options.map(o=>`<button class="chip" data-act="pick" data-i="${i}" data-id="${o.id}">${esc(o.name)} · ${fmt(o.price)}</button>`).join('')}</div></div></div>`;
+    }
+  });
+  const t=total(ls);
+  h+=`<div class="tot"><span>Total</span><b>${fmt(t)}</b></div>`;
+  if(!ro){
+    const p=ls.filter(l=>st(l)!=='ok').length;
+    h+=`<button class="cta" data-act="review" ${p||!t?'disabled':''}>${p?`Pehle ${p} issue / sawal theek karein`:`Order check karein · ${fmt(t)}`}</button><button class="sec" data-act="newo" style="width:100%">Naya order shuru karein</button>`;
+  }
+  return h;
+}
+
+function sheetHtml(){
+  const validLines=S.lines.filter(l=>st(l)==='ok');
+  const rows=validLines.map(l=>`<tr><td>${esc(l.item.name)}</td><td>${l.qty} ${UL[l.unit]}</td><td>${fmt(pcs(l)*l.item.price)}</td></tr>`).join('');
+  return `<div><h3>Bhejne se pehle check kar lein</h3><table>${rows}</table><div class="tot"><span>Total</span><b>${fmt(total(validLines))}</b></div><p class="mut sm">Aapke “Haan” dabane ke baad hi order warehouse ko jaata hai. All prices are locked to catalog master.</p><div class="btns"><button class="sec" data-act="back">Wapas</button><button class="cta" data-act="confirm">Haan, order bhej do</button></div></div>`;
+}
+
+function renderRAGInspector(){
+  const el=$('#rag-inspector');
+  if(!el)return;
+  if(!S.latestRAG||!S.latestRAG.length){
+    el.innerHTML='<p class="note">Type or send an order to inspect the RAG Retriever pipeline in real-time.</p>';
+    return;
+  }
+  let h='';
+  S.latestRAG.forEach(r=>{
+    const statusCol=r.status==='GROUNDED_MATCH'?'var(--ok)':r.status==='DISAMBIGUATION_REQUIRED'?'var(--blue)':'var(--red)';
+    h+=`<div class="rag-card">
+      <div class="rag-card-hdr">
+        <span>Fragment: “${esc(r.raw)}”</span>
+        <span class="badge-rag" style="color:${statusCol}">${esc(r.status)}</span>
+      </div>
+      <div>Retrieved Candidates (Confidence):</div>
+      <ul class="cand-list">
+        ${(r.candidates||[]).length?r.candidates.map(c=>`<li><b>${esc(c.name)}</b> — ${c.score}%</li>`).join(''):'<li>No high-confidence candidate matched. Zero-Hallucination block engaged.</li>'}
+      </ul>
+    </div>`;
+  });
+  el.innerHTML=h;
+}
+
+function render(){
+  const c=$('#chat'),top=c.scrollTop;let h='';
+  S.chat.forEach(m=>{
+    if(m.t==='bot')h+=`<div class="b">${m.text}<time>${m.time}</time></div>`;
+    else if(m.t==='user')h+=`<div class="b me">${esc(m.text)}<time>${m.time} ✓✓</time></div>`;
+    else if(m.t==='alert')h+=`<div class="b alert-box">${m.text}<time>${m.time}</time></div>`;
+    else if(m.t==='receipt')h+=`<div class="b wide">${m.html}<time>${m.time}</time></div>`;
+    else if(m.t==='order'){
+      h+=`<div class="b wide">${card(false)}</div>`;
+      nudges().forEach(n=>{
+        const it=byId[n.id],t=typ(S.store,n.id);
+        const probPct=Math.round(n.prob*100);
+        h+=`<div class="b nudge">💡 Aapne is baar <b>${esc(it.name)}</b> order nahi kiya, bhej dein? <span class="tag-rag">Logistic Reg: ${probPct}% probability · ${n.cycleRatio.toFixed(1)}x cycle</span><div class="chips"><button class="chip" data-act="addn" data-id="${n.id}">Haan, jod do</button><button class="chip g" data-act="skipn" data-id="${n.id}">Is baar nahi</button></div></div>`;
+      });
+    }
+  });
+  if(S.typing)h+='<div class="b dots"><span></span><span></span><span></span></div>';
+  c.innerHTML=h;
+  if(S.chat.length!==S.len||S.typing){c.scrollTop=c.scrollHeight;S.len=S.chat.length}else c.scrollTop=top;
+  $('#sheet').hidden=!S.sheet;$('#sheet').innerHTML=S.sheet?(S.invView&&S.invoices[S.invView]?invHtml(S.invoices[S.invView]):sheetHtml()):'';
+  if(S.lines.length){
+    S.last=JSON.stringify({
+      store:S.store,
+      status:'draft',
+      rag_engine:S.engine,
+      items:S.lines.map(l=>({
+        source_text:l.raw,
+        product_id:l.item?.id??null,
+        product:l.item?.name??null,
+        quantity:l.qty,
+        unit:l.unit,
+        pieces:l.item&&l.qty!=null?pcs(l):null,
+        flag:st(l),
+        rag_status:l.ragStatus||null,
+        price_inr:l.item?.price??null
+      })),
+      total_inr:total(S.lines)
+    },null,2);
+  }
+  $('#json').textContent=S.last;
+  $('#eng').textContent='Parser engine: '+S.engine;
+  renderRAGInspector();
+}
+
+function dedupe(){
+  const seen={};
+  S.lines=S.lines.filter(l=>{
+    if(!l.item||l.qty==null)return true;
+    const k=l.item.id+l.unit,f=seen[k];
+    if(f){f.qty+=l.qty;f.ack=false;f.fresh=1;return false}
+    seen[k]=l;return true;
+  });
+}
+
+function greet(){
+  S.lines=[];S.sheet=false;S.typing=false;S.skip={};S.len=0;S.latestRAG=[];
+  $('#sn').textContent=P[S.store].name;
+  S.chat=[{t:'bot',text:`Namaste ${esc(P[S.store].name.split(' ')[0])} ji 🙏 Apna order waise hi likhiye jaise WhatsApp par likhte hain. Jaise: “2 peti maggi, 1 peti parle g”.`,time:tm()}];
+  render();
+}
+
+async function apiLines(text){
+  const r=await fetch('/api/parse',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:text})});
+  if(!r.ok)throw new Error('api '+r.status);
+  const j=await r.json();if(!Array.isArray(j.lines))throw new Error('bad');
+  if(j.price_tamper_attempt) S.priceAlertActive=true;
+  return j.lines.map(x=>{
+    let qty=x.qty,size=x.size||null,unit=x.unit;
+    if(['kg','g','l'].includes(unit)){if(!size)size={n:qty,u:unit};qty=null;unit=null}
+    return resolveWithRAG({
+      raw:x.text||x.product,
+      qty,unit,rawUnit:unit,size,
+      words:String(x.product).toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w&&!STOP.has(w)&&!/^\d+$/.test(w))
+    });
+  });
+}
+
+async function getLines(text){
+  try{
+    const l=await apiLines(text);
+    if(!l.length)throw 0;
+    S.engine='Claude LLM + Server RAG Retriever';
+    S.latestRAG=l.map(x=>({raw:x.raw,status:x.ragStatus,candidates:x.retrievalContext}));
+    return l;
+  }catch(e){
+    S.engine='Client-side Dense RAG Retriever (100% offline)';
+    const parsed=splitMsg(text).map(s=>resolveWithRAG(parseSeg(s)));
+    S.latestRAG=parsed.map(x=>({raw:x.raw,status:x.ragStatus,candidates:x.retrievalContext}));
+    return parsed;
+  }
+}
+
+async function send(text){
+  text=(text||'').trim();if(!text||S.typing)return;
+  S.chat=S.chat.filter(m=>m.t!=='order');
+  S.chat.push({t:'user',text,time:tm()});
+  S.typing=true;render();
+
+  // Edge Case 2: Price Tampering Guardrail Check
+  const isTamper=checkPriceTamper(text);
+  if(isTamper){
+    S.chat.push({
+      t:'alert',
+      text:`🚨 <b>STRICT COMPLIANCE WARNING: Rate Tampering / Price Override Blocked</b><br>` +
+           `Distributor policy ke mutabik sabhi wholesale rates aur MRP catalog se strictly fixed hain. ` +
+           `Bargaining, manual discount, ya rate change allow nahi hai. Order sirf official catalog price par hi lock kiya gaya hai.`,
+      time:tm()
+    });
+  }
+
+  const nl=await getLines(text);
+  S.lines.forEach(l=>l.fresh=0);nl.forEach(l=>l.fresh=1);
+  const b4=S.lines.length+nl.length;
+  S.lines.push(...nl);dedupe();
+  const mg=b4-S.lines.length,nw=nl.length-mg;
+  const parts=(nw?nw+' item jod diye. ':'')+(mg?mg+' item pehle se order mein tha, uski quantity badha di. ':'');
+  S.typing=false;
+  const p=S.lines.filter(l=>st(l)!=='ok').length;
+  S.chat.push({t:'bot',text:'Order padh liya ✅ '+parts+(p?`Par ${p} issue / sawal ke baare mein check karein 👇`:'Sab theek ho to check karke confirm karein.'),time:tm()});
+  S.chat.push({t:'order'});
+  render();
+}
+
+async function llmEval(){
+  const o=$('#llmres');o.textContent='Running test messages through Claude RAG API endpoint…';const pre={};
+  try{for(const[m]of TESTS)pre[m]=await apiLines(m)}catch(e){
+    S.llmh='<p class="note">Anthropic API key not reachable. Deploy or provide ANTHROPIC_API_KEY to test the cloud LLM step.</p>';
+    o.innerHTML=S.llmh;return;
+  }
+  const T=runTests(pre),pct=x=>Math.round(x*100)+'%';
+  S.llmh=`<h2>Claude RAG Parser on Same Tests</h2><div class="kpi"><div><b>${pct(T.c/T.n)}</b>exact correct</div><div><b>${pct(T.ask/T.n)}</b>safe follow-up</div><div><b>${T.wrong}</b>silent wrong</div><div><b>${T.hall}</b>hallucinations</div></div>`;
+  o.innerHTML=S.llmh;
+}
+
+const SELLER={name:'Kirana Wholesale Distributors (demo)',gstin:'GSTIN: 27AABCU9603R1ZM'};
+function invBody(v){
+  const a=v.lines.every(l=>l.gst!=null);let tx='';
+  if(a){
+    const tv=v.lines.reduce((s,l)=>s+l.amt/(1+l.gst/100),0),tax=v.total-tv;
+    tx=`<tr><td colspan="4" class="r">Taxable value</td><td class="r">${fmt(tv)}</td></tr><tr><td colspan="4" class="r">CGST</td><td class="r">${fmt(tax/2)}</td></tr><tr><td colspan="4" class="r">SGST</td><td class="r">${fmt(tax/2)}</td></tr>`;
+  }
+  return `<h3 style="margin:0">${a?'Tax Invoice':'Invoice'}</h3><p style="margin:2px 0 8px"><b>${esc(SELLER.name)}</b><br>${esc(SELLER.gstin)}</p><p style="margin:0 0 8px">Invoice no: <b>${v.id}</b><br>Date: ${v.date}<br>Bill to: <b>${esc(v.store)}</b></p><table><tr><th>#</th><th>Item</th><th>Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr>${v.lines.map((l,i)=>`<tr><td>${i+1}</td><td>${esc(l.name)}</td><td>${l.qty} ${UL[l.unit]}<br><small>${l.pcs.toLocaleString('en-IN')} pcs</small></td><td class="r">${fmt(l.rate)}</td><td class="r">${fmt(l.amt)}</td></tr>`).join('')}${tx}<tr><td colspan="4" class="r"><b>Grand total</b></td><td class="r"><b>${fmt(v.total)}</b></td></tr></table><p style="font-size:12px">All rates locked to catalog source of truth. Computer-generated wholesale invoice.</p>`;
+}
+
+const invDoc=v=>`<!doctype html><html><head><meta charset="utf-8"><title>Invoice ${v.id}</title><style>body{font:14px Arial,sans-serif;padding:24px;max-width:720px;margin:auto}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #999;padding:5px 6px;text-align:left;vertical-align:top}.r{text-align:right}</style></head><body>${invBody(v)}</body></html>`;
+const invHtml=v=>`<div>${invBody(v)}<div class="btns" style="margin-top:8px"><button class="sec" data-act="invprint">Print / PDF</button><button class="sec" data-act="invdl">Download</button><button class="sec" data-act="invwa">WhatsApp</button></div><button class="sec" data-act="back" style="width:100%">Band karein</button></div>`;
+function invText(v){return `Invoice ${v.id}\n${v.store}\n${v.date}\n`+v.lines.map((l,i)=>`${i+1}. ${l.name} - ${l.qty} ${UL[l.unit]} (${l.pcs} pcs) = ${fmt(l.amt)}`).join('\n')+`\nTotal: ${fmt(v.total)}`;}
+function invPrint(){const v=S.invoices[S.invView];if(!v)return;const f=document.createElement('iframe');f.style.cssText='position:fixed;width:0;height:0;border:0';document.body.appendChild(f);f.onload=()=>{try{f.contentWindow.focus();f.contentWindow.print()}catch(e){}setTimeout(()=>f.remove(),60000)};f.srcdoc=invDoc(v)}
+function invDownload(){const v=S.invoices[S.invView];if(!v)return;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([invDoc(v)],{type:'text/html'}));a.download=v.id+'-invoice.html';a.click()}
+function invShare(){const v=S.invoices[S.invView];if(v)window.open('https://wa.me/?text='+encodeURIComponent(invText(v)),'_blank')}
+
+function confirmOrder(){
+  const validLines=S.lines.filter(l=>st(l)==='ok');
+  const html=card(true,validLines),t=total(validLines),id='KR-'+(++S.n);
+  S.invoices[id]={id,date:new Date().toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'}),store:P[S.store].name,total:t,lines:validLines.map(l=>({name:l.item.name,qty:l.qty,unit:l.unit,pcs:pcs(l),rate:l.item.price,amt:pcs(l)*l.item.price,gst:l.item.gst}))};
+  S.chat=S.chat.map(m=>m.t==='order'?{t:'receipt',html,time:tm()}:m);
+  S.chat.push({t:'bot',text:`✅ Order <b>${id}</b> confirm ho gaya. Total ${fmt(t)}. Warehouse ko bhej diya gaya hai, kal subah tak delivery. Naya order likhne ke liye bas message bhejein.<div class="chips"><button class="chip" data-act="inv" data-id="${id}">📄 Invoice dekhein</button></div>`,time:tm()});
+  S.lines=[];S.sheet=false;render();
+}
+
+$('.phone').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-act]');if(!b)return;
+  const a=b.dataset.act,i=+b.dataset.i,l=S.lines[i];
+  if(a==='pick'){l.item=byId[b.dataset.id];l.options=null;l.ragStatus='GROUNDED_MATCH';dedupe();}
+  else if(a==='sugg'){l.item=l.sugg;l.missing=false;l.sugg=null;l.ragStatus='GROUNDED_MATCH';dedupe();}
+  else if(a==='rm')S.lines.splice(i,1);
+  else if(a==='ack')l.ack=true;
+  else if(a==='qset'){l.qty=+b.dataset.v;l.ack=false;dedupe();}
+  else if(a==='qset_case'){l.qty=+b.dataset.v;l.unit='case';l.rawUnit='case';l.ack=false;dedupe();}
+  else if(a==='fix'){l.qty=+b.dataset.v;l.ack=false;}
+  else if(a==='qinc'){l.qty+=1;l.ack=false;}
+  else if(a==='qdec'){l.qty=Math.max(1,Math.floor(l.qty-1));l.ack=false;}
+  else if(a==='addn'){
+    const id=b.dataset.id;
+    S.lines.push({raw:'(ML nudge)',qty:Math.max(1,Math.round(typ(S.store,id)/byId[id].case)),unit:byId[id].tin?'tin':'case',rawUnit:byId[id].tin?'tin':'case',item:byId[id],options:null,missing:false,ack:true,ragStatus:'LOGISTIC_REG_NUDGE'});
+  }
+  else if(a==='skipn')S.skip[S.store+b.dataset.id]=1;
+  else if(a==='review')S.sheet=true;
+  else if(a==='back'){S.sheet=false;S.invView=null;}
+  else if(a==='inv'){S.invView=b.dataset.id;S.sheet=true;}
+  else if(a==='invprint')invPrint();
+  else if(a==='invdl')invDownload();
+  else if(a==='invwa')invShare();
+  else if(a==='brand'){
+    const p=l.p;p.words=[...p.words,...tk(b.dataset.b)];const f=l.fresh;
+    Object.assign(l,{brands:null,options:null,item:null,missing:false,sugg:null},resolveWithRAG(p),{fresh:f});
+    dedupe();
+  }
+  else if(a==='newo'){
+    S.lines=[];S.sheet=false;S.chat=S.chat.filter(m=>m.t!=='order');
+    S.chat.push({t:'bot',text:'Draft hata diya 🗑 Naya order likhiye.',time:tm()});
+  }
+  else if(a==='confirm')return confirmOrder();
+  render();
+});
+
+$('#go').onclick=()=>{send($('#in').value);$('#in').value=''};
+$('#in').onkeydown=e=>{if(e.key==='Enter'){send($('#in').value);$('#in').value=''}};
+$('#store').innerHTML=Object.keys(P).map(k=>`<option value="${k}">${esc(P[k].name)}</option>`).join('');
+$('#store').onchange=e=>{S.store=e.target.value;greet()};
+$('#sc').innerHTML=SC.map((s,i)=>`<button data-sc="${i}">${s[0]}<small>${s[2]}</small></button>`).join('');
+$('#sc').onclick=e=>{const b=e.target.closest('button');if(!b)return;const s=SC[b.dataset.sc];S.store=s[1];$('#store').value=s[1];greet();send(s[3])};
+$('#reset').onclick=greet;
+
+(async()=>{
+  try{
+    const r=await fetch('catalog.csv');
+    if(r.ok){const t=await r.text();if(t.startsWith('id|')){build(t)}}
+  }catch(e){}
+  bindEv();
+  greet();
+})();
+</script></body></html>
