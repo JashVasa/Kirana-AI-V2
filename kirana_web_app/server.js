@@ -12,7 +12,45 @@ const MIME_TYPES = {
   '.csv': 'text/csv; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.md': 'text/markdown; charset=utf-8',
+  '.ico': 'image/x-icon',
 };
+
+// Static literal references so @vercel/nft AST parser traces and bundles them:
+let preloadedIndexHtml = null;
+try {
+  preloadedIndexHtml = fs.readFileSync(path.join(__dirname, 'index.html'));
+} catch (e) {}
+
+let preloadedCatalogCsv = null;
+try {
+  preloadedCatalogCsv = fs.readFileSync(path.join(__dirname, 'catalog.csv'));
+} catch (e) {}
+
+function loadAsset(filename) {
+  if (filename === 'index.html' && preloadedIndexHtml) {
+    return preloadedIndexHtml;
+  }
+  if (filename === 'catalog.csv' && preloadedCatalogCsv) {
+    return preloadedCatalogCsv;
+  }
+
+  const candidateDirs = [
+    __dirname,
+    path.join(__dirname, '..'),
+    process.cwd(),
+    path.join(process.cwd(), 'kirana_web_app')
+  ];
+
+  for (const dir of candidateDirs) {
+    try {
+      const fullPath = path.join(dir, filename);
+      if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+        return fs.readFileSync(fullPath);
+      }
+    } catch (e) {}
+  }
+  return null;
+}
 
 const server = http.createServer(async (req, res) => {
   // CORS & helper extensions
@@ -36,10 +74,10 @@ const server = http.createServer(async (req, res) => {
   };
 
   const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-  const pathname = parsedUrl.pathname;
+  let pathname = parsedUrl.pathname;
 
   // Handle /api/parse
-  if (pathname === '/api/parse') {
+  if (pathname === '/api/parse' || pathname.endsWith('/api/parse')) {
     if (req.method !== 'POST') {
       return res.status(405).json({ error: 'POST only' });
     }
@@ -68,24 +106,40 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // Handle static files
-  let filePath = path.join(__dirname, pathname === '/' ? 'index.html' : pathname);
-  try {
-    const stats = await fs.promises.stat(filePath);
-    if (stats.isDirectory()) {
-      filePath = path.join(filePath, 'index.html');
+  // Handle root or index.html
+  if (pathname === '/' || pathname === '/index.html' || pathname.endsWith('/index.html')) {
+    const content = loadAsset('index.html');
+    if (content) {
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      res.statusCode = 200;
+      return res.end(content);
     }
-    const ext = path.extname(filePath).toLowerCase();
+  }
+
+  // Handle catalog.csv
+  if (pathname === '/catalog.csv' || pathname.endsWith('/catalog.csv')) {
+    const content = loadAsset('catalog.csv');
+    if (content) {
+      res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+      res.statusCode = 200;
+      return res.end(content);
+    }
+  }
+
+  // Handle other static files
+  const cleanPath = pathname.replace(/^\/+/, '');
+  const content = loadAsset(cleanPath);
+  if (content) {
+    const ext = path.extname(cleanPath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-    const content = await fs.promises.readFile(filePath);
     res.setHeader('Content-Type', contentType);
     res.statusCode = 200;
-    res.end(content);
-  } catch (err) {
-    res.statusCode = 404;
-    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-    res.end('404 Not Found');
+    return res.end(content);
   }
+
+  res.statusCode = 404;
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.end('404 Not Found');
 });
 
 server.listen(PORT, '0.0.0.0', () => {
